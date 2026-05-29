@@ -1,0 +1,188 @@
+{
+  "version": "0.2.0",
+  "note": "Curated recipe selections (id/title/intent/facetFrame/keywords/output/avoid). prompt+negative derived by derive.mjs.",
+  "recipes": [
+    {
+      "id": "ai-saas-hero",
+      "title": "AI SaaS 히어로 그래픽",
+      "intent": "AI SaaS 랜딩 히어로 그래픽",
+      "facetFrame": {
+        "rendering": "Technical Illustration",
+        "perspective": "Isometric",
+        "color": "Limited Palette",
+        "texture": "Grainy Gradient or Blueprint Grid Pattern",
+        "composition": "Negative Space",
+        "subject": "Simplified system modules",
+        "mood": "Crisp"
+      },
+      "keywords": [
+        "Technical Illustration",
+        "Monoline",
+        "Architecture Diagram",
+        "Blueprint Line",
+        "Layer Diagram",
+        "Limited Palette"
+      ],
+      "output": [
+        "SVG",
+        "Image(gen)",
+        "Hybrid"
+      ],
+      "avoid": [
+        "Watercolor",
+        "Claymation",
+        "Heavy Glow",
+        "Photoreal product shot"
+      ]
+    },
+    {
+      "id": "developer-tool-diagram",
+      "title": "개발자 도구 아키텍처 다이어그램",
+      "intent": "개발자 도구 랜딩용 시스템 구조 그래픽",
+      "facetFrame": {
+        "rendering": "Technical Illustration",
+        "perspective": "Orthographic or Isometric",
+        "color": "Monochrome with Spot Color",
+        "texture": "Matte / Blueprint Grid Pattern",
+        "composition": "Grid-Based",
+        "subject": "Detailed enough to explain modules",
+        "mood": "Crisp"
+      },
+      "keywords": [
+        "Architecture Diagram",
+        "Node-link Diagram",
+        "Technical Line",
+        "Blueprint Line",
+        "Measurement Diagram"
+      ],
+      "output": [
+        "SVG",
+        "React SVG"
+      ],
+      "avoid": [
+        "Decorative gradients",
+        "Cartoon character",
+        "Unnecessary 3D"
+      ]
+    },
+    {
+      "id": "portfolio-background",
+      "title": "포트폴리오·에이전시 배경 그래픽",
+      "intent": "개인 브랜드 히어로 배경",
+      "facetFrame": {
+        "rendering": "Abstract & Generative Form",
+        "perspective": "Flat or spatial field",
+        "color": "Monochrome or Limited Palette",
+        "texture": "Grainy Gradient",
+        "composition": "Negative Space",
+        "subject": "Abstract",
+        "mood": "Premium / calm"
+      },
+      "keywords": [
+        "Mesh Gradient",
+        "Grainy Gradient",
+        "Topographic Lines",
+        "Monoline",
+        "Blur"
+      ],
+      "output": [
+        "CSS",
+        "Canvas",
+        "Image(gen)"
+      ],
+      "avoid": [
+        "Overly colorful gradients",
+        "Busy particle systems"
+      ]
+    },
+    {
+      "id": "creative-coding-visual",
+      "title": "크리에이티브 코딩 비주얼",
+      "intent": "캔버스로 움직이는 추상 그래픽",
+      "facetFrame": {
+        "rendering": "Generative graphic",
+        "perspective": "Spatial field",
+        "color": "Limited Palette",
+        "texture": "Digital Noise",
+        "composition": "Full canvas with low density",
+        "subject": "Abstract motion",
+        "mood": "Technical / cinematic"
+      },
+      "keywords": [
+        "Particle Field",
+        "Flow Field",
+        "Vector Field",
+        "Glow",
+        "Blur"
+      ],
+      "output": [
+        "Canvas",
+        "WebGL",
+        "Three.js"
+      ],
+      "avoid": [
+        "High particle density",
+        "Unreadable UI overlay"
+      ]
+    },
+    {
+      "id": "wellness-app-illustration",
+      "title": "웰니스 앱 일러스트레이션",
+      "intent": "명상 앱 온보딩 이미지",
+      "facetFrame": {
+        "rendering": "Soft illustration",
+        "perspective": "Flat 2D",
+        "color": "Pastel or Muted",
+        "texture": "Paper Grain",
+        "composition": "Negative Space",
+        "subject": "Simplified",
+        "mood": "Soft Light"
+      },
+      "keywords": [
+        "Paper Grain",
+        "Clean Vector Line",
+        "Flat Fill",
+        "Limited Palette",
+        "Blur"
+      ],
+      "output": [
+        "Image(gen)",
+        "SVG"
+      ],
+      "avoid": [
+        "Hard technical linework",
+        "Cyberpunk",
+        "Aggressive contrast"
+      ]
+    },
+    {
+      "id": "premium-product-tech-3d",
+      "title": "프리미엄 테크 3D 오브젝트",
+      "intent": "미래적인 AI 제품 오브젝트",
+      "facetFrame": {
+        "rendering": "3D Render",
+        "perspective": "Eye Level or Isometric",
+        "color": "Limited Palette",
+        "texture": "Glass / Chrome / Matte",
+        "composition": "Centered with negative space",
+        "subject": "Simplified object",
+        "mood": "Soft light / premium"
+      },
+      "keywords": [
+        "Glass Material",
+        "Chrome Material",
+        "Transparent View",
+        "Blur",
+        "Refraction"
+      ],
+      "output": [
+        "Image(gen)",
+        "Three.js"
+      ],
+      "avoid": [
+        "Overly complex reflections",
+        "Toy-like clay render"
+      ]
+    }
+  ]
+}

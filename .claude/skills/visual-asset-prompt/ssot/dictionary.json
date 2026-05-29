@@ -1,0 +1,6760 @@
+{
+  "package": "vdl-visual-asset-hybrid",
+  "version": "0.1.0",
+  "sourceModel": "Claude breadth backbone (284) x GPT depth/validation overlay (45) per MERGE-RULES.md",
+  "categoryCount": 20,
+  "keywordCount": 284,
+  "keywords": [
+    {
+      "id": "etching",
+      "keyword": "Etching",
+      "koName": "에칭",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "금속판 부식 판화풍. 세밀한 선과 고전적 음영",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Generated Raster Image",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Archival Paper Texture",
+        "Cross-hatching",
+        "Engraved Line",
+        "Monochrome",
+        "Ornamental Border"
+      ],
+      "incompatibleKeywords": [
+        "Clay Render",
+        "Glass Material",
+        "Glitch",
+        "Holographic Material",
+        "Mesh Gradient",
+        "Neon",
+        "Particle Field",
+        "Vaporwave",
+        "Y2K Futurism"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "engraving",
+      "keyword": "Engraving",
+      "koName": "인그레이빙",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "뷰린 각인선. 정밀한 평행선 음영, 고전적 서적 삽화 느낌",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Archival Paper Texture",
+        "Cross-hatching",
+        "Hairline",
+        "Monochrome"
+      ],
+      "incompatibleKeywords": [
+        "Blur",
+        "Clay Render",
+        "Glow"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "woodcut",
+      "keyword": "Woodcut",
+      "koName": "목판화풍",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "거칠고 강한 면, 굵은 선, 높은 대비의 수공예적 판화",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "High Contrast",
+        "Limited Palette",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Blur",
+        "Glass Material",
+        "Glossy Surface",
+        "Holographic Material",
+        "Iridescent Material",
+        "Mesh Gradient"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "linocut",
+      "keyword": "Linocut",
+      "koName": "리노컷",
+      "category": "Printmaking & Drawing",
+      "role": "Niche",
+      "definition": "단순화된 형태, 굵은 면 분할, 거친 수공예적 가장자리",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Limited Palette",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Glow"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "lithograph",
+      "keyword": "Lithograph",
+      "koName": "석판화풍",
+      "category": "Printmaking & Drawing",
+      "role": "Support",
+      "definition": "부드러운 톤, 손으로 그린 듯한 질감, 회화적 표면감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Muted",
+        "Paper Grain",
+        "Soft Shading"
+      ],
+      "incompatibleKeywords": [
+        "Glitch",
+        "Neon"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "screenprint",
+      "keyword": "Screenprint",
+      "koName": "실크스크린풍",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "선명한 색면, 제한된 팔레트, 포스터 같은 인쇄감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Halftone Pattern",
+        "Limited Palette",
+        "Screenprint Texture"
+      ],
+      "incompatibleKeywords": [
+        "Blur",
+        "Gradient Shading"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "risograph",
+      "keyword": "Risograph",
+      "koName": "리소그래프풍",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "제한된 별색, 인쇄 어긋남, 거친 그레인, 독립 출판물 감성",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Limited Palette",
+        "Misregistration",
+        "Risograph Grain"
+      ],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Glossy Surface",
+        "Refraction"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ink-drawing",
+      "keyword": "Ink Drawing",
+      "koName": "잉크 드로잉",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "펜이나 붓 잉크의 선명한 선과 강한 대비",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Cross-hatching",
+        "Ink Bleed",
+        "Monochrome",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Glass Material",
+        "Glow"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ink-wash",
+      "keyword": "Ink Wash",
+      "koName": "수묵/잉크 워시",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "물에 희석된 잉크의 번짐, 농담, 흐릿한 음영. 동양화 감성",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Ink Wash Shading",
+        "Monochrome",
+        "Negative Space",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint Line",
+        "Chrome Material",
+        "Neon"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "pencil-sketch",
+      "keyword": "Pencil Sketch",
+      "koName": "연필 스케치",
+      "category": "Printmaking & Drawing",
+      "role": "Support",
+      "definition": "연필 선, 밑그림, 필압이 드러나는 드로잉",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Contour Shading",
+        "Hand-drawn Line",
+        "Monochrome",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Glossy Surface",
+        "Neon"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "charcoal-drawing",
+      "keyword": "Charcoal Drawing",
+      "koName": "목탄 드로잉",
+      "category": "Printmaking & Drawing",
+      "role": "Niche",
+      "definition": "부드럽고 어두운 명암, 거친 번짐, 강한 질감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "High Contrast",
+        "Monochrome",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Clean Vector Line"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "watercolor",
+      "keyword": "Watercolor",
+      "koName": "수채화풍",
+      "category": "Printmaking & Drawing",
+      "role": "Support",
+      "definition": "물감의 투명도, 번짐, 물자국, 부드러운 색 겹침",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Ink Bleed",
+        "Paper Grain",
+        "Pastel",
+        "Soft Shading"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint",
+        "Blueprint Line",
+        "Chrome Material",
+        "Glitch",
+        "Metallic Material",
+        "Pixel Art",
+        "Synthwave",
+        "Technical Illustration",
+        "Voxel",
+        "Wireframe Render"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "gouache",
+      "keyword": "Gouache",
+      "koName": "과슈풍",
+      "category": "Printmaking & Drawing",
+      "role": "Support",
+      "definition": "불투명하고 매트한 색면, 부드러운 브러시 자국",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Matte Paper",
+        "Pastel"
+      ],
+      "incompatibleKeywords": [
+        "Glitch",
+        "Glossy Surface",
+        "Neon"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "collage-illustration",
+      "keyword": "Collage Illustration",
+      "koName": "콜라주 일러스트",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "종이, 사진, 질감, 도형을 오려 붙인 듯한 이질적 레이어 조합",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Asymmetric",
+        "Layered/Overlap",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Clean Vector Line",
+        "Monoline"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "cut-paper-illustration",
+      "keyword": "Cut-paper Illustration",
+      "koName": "컷페이퍼 일러스트",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "종이를 잘라 겹친 듯한 단순한 형태, 레이어, 그림자",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Layered/Overlap",
+        "Pastel"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Engraved Line"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "flat-vector-illustration",
+      "keyword": "Flat Vector Illustration",
+      "koName": "플랫 벡터 일러스트",
+      "category": "Printmaking & Drawing",
+      "role": "Core",
+      "definition": "단순한 도형, 평면 색상, 명확한 윤곽의 벡터 기반 일러스트",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Clean Vector Line",
+        "Flat Fill",
+        "Limited Palette",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Film Grain",
+        "Ink Bleed"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "cyanotype",
+      "keyword": "Cyanotype",
+      "koName": "시아노타입",
+      "category": "Printmaking & Drawing",
+      "role": "Niche",
+      "definition": "프러시안 블루 실루엣. 감광지 + 자외선 노출",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Monochrome",
+        "Paper Grain",
+        "Silhouette"
+      ],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Neon"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ukiyo-e",
+      "keyword": "Ukiyo-e",
+      "koName": "우키요에",
+      "category": "Printmaking & Drawing",
+      "role": "Support",
+      "definition": "일본 목판 다색 인쇄. 평탄한 색면, 굵은 외곽선, 보카시 기법",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Limited Palette",
+        "Outline Drawing"
+      ],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Glitch"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "letterpress",
+      "keyword": "Letterpress",
+      "koName": "레터프레스",
+      "category": "Printmaking & Drawing",
+      "role": "Niche",
+      "definition": "활자/판 눌러찍기. deboss 자국, 잉크 농도 변화",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Debossed Surface",
+        "Limited Palette",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Glass Material",
+        "Glow"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "technical-illustration",
+      "keyword": "Technical Illustration",
+      "koName": "테크니컬 일러스트",
+      "category": "Specialized Illustration",
+      "role": "Scaffold",
+      "definition": "대상의 구조, 부품, 작동 원리를 명확하게 설명하는 정밀한 설명형 일러스트",
+      "visualResult": [
+        "정밀한 선",
+        "콜아웃/라벨",
+        "구조 설명",
+        "기술 문서 같은 명료함"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Developer Tool",
+          "Data Product",
+          "B2B Enterprise"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal",
+          "Premium"
+        ],
+        "useCase": [
+          "landing hero",
+          "feature diagram",
+          "technical blog header"
+        ]
+      },
+      "compatibleKeywords": [
+        "Annotation Diagram",
+        "Blueprint Line",
+        "Isometric",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [
+        "Ink Bleed",
+        "Watercolor"
+      ],
+      "promptFragment": "precise technical illustration with clean structural lines, callouts, and diagrammatic clarity",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "scientific-illustration",
+      "keyword": "Scientific Illustration",
+      "koName": "과학 일러스트",
+      "category": "Specialized Illustration",
+      "role": "Scaffold",
+      "definition": "생물, 물질, 자연현상을 정확하고 분석적으로 묘사하는 재현 스타일",
+      "visualResult": [
+        "분석적 묘사",
+        "정확한 구조",
+        "관찰 기록 느낌"
+      ],
+      "implementation": [
+        "Generated Raster Image",
+        "SVG Linework"
+      ],
+      "fit": {
+        "product": [
+          "Healthcare",
+          "Education",
+          "Data Product"
+        ],
+        "tone": [
+          "Technical",
+          "Editorial",
+          "Premium"
+        ],
+        "useCase": [
+          "educational visual",
+          "article illustration"
+        ]
+      },
+      "compatibleKeywords": [
+        "Annotation Diagram",
+        "Cross-section View",
+        "Hairline",
+        "Limited Palette"
+      ],
+      "incompatibleKeywords": [
+        "Glitch",
+        "Neon"
+      ],
+      "promptFragment": "analytical scientific illustration with accurate structure and restrained detail",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "botanical-illustration",
+      "keyword": "Botanical Illustration",
+      "koName": "식물 세밀화",
+      "category": "Specialized Illustration",
+      "role": "Scaffold",
+      "definition": "식물의 잎, 줄기, 꽃, 뿌리를 정확하고 세밀하게 표현",
+      "visualResult": [
+        "식물 표본 느낌",
+        "섬세한 선",
+        "자연주의적 정밀함"
+      ],
+      "implementation": [
+        "Generated Raster Image",
+        "SVG Linework"
+      ],
+      "fit": {
+        "product": [
+          "Wellness",
+          "Fashion / Beauty",
+          "Restaurant / Hospitality"
+        ],
+        "tone": [
+          "Warm",
+          "Premium",
+          "Editorial"
+        ],
+        "useCase": [
+          "brand visual",
+          "packaging",
+          "editorial image"
+        ]
+      },
+      "compatibleKeywords": [
+        "Detailed",
+        "Earth Tone",
+        "Hairline",
+        "Paper Grain"
+      ],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Glitch",
+        "Neon"
+      ],
+      "promptFragment": "refined botanical illustration with delicate specimen-like detail",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "anatomical-illustration",
+      "keyword": "Anatomical Illustration",
+      "koName": "해부학 일러스트",
+      "category": "Specialized Illustration",
+      "role": "Scaffold",
+      "definition": "인체나 생물의 내부 구조, 기관, 근육, 뼈를 분석적으로 표현",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Annotation Diagram",
+        "Cross-section View",
+        "Cutaway View"
+      ],
+      "incompatibleKeywords": [
+        "Glitch",
+        "Pixel Pattern"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "medical-illustration",
+      "keyword": "Medical Illustration",
+      "koName": "의학 일러스트",
+      "category": "Specialized Illustration",
+      "role": "Niche",
+      "definition": "질병, 수술, 생리 작용을 교육적으로 설명하는 전문 일러스트",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Annotation Diagram",
+        "Cross-section View",
+        "Limited Palette"
+      ],
+      "incompatibleKeywords": [
+        "Neon",
+        "Vaporwave"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "cartographic-illustration",
+      "keyword": "Cartographic Illustration",
+      "koName": "지도학적 일러스트",
+      "category": "Specialized Illustration",
+      "role": "Scaffold",
+      "definition": "지도, 지형, 경로, 위치 관계를 시각적으로 표현하는 지도 기반 스타일",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Topographic Lines",
+        "Topographic View"
+      ],
+      "incompatibleKeywords": [
+        "Clay Render",
+        "Glitch"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "vector-illustration",
+      "keyword": "Vector Illustration",
+      "koName": "벡터 일러스트",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "수학적 곡선 기반. 선명한 외곽, 솔리드 채움, 무한 확대",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Clean Vector Line",
+        "Flat Fill",
+        "Limited Palette"
+      ],
+      "incompatibleKeywords": [
+        "Film Grain",
+        "Ink Bleed"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "flat-design",
+      "keyword": "Flat Design",
+      "koName": "플랫 디자인",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "그라데이션/그림자 없이 순수 평면 색면과 기하 형태",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Grid-Based",
+        "Limited Palette",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Embossed Surface",
+        "Film Grain"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "isometric-illustration",
+      "keyword": "Isometric Illustration",
+      "koName": "아이소메트릭 일러스트",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "30° 축측 투영. 원근 왜곡 없이 세 면 동일 비율",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "Three.js"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Clean Vector Line",
+        "Flat Fill",
+        "Isometric",
+        "Limited Palette"
+      ],
+      "incompatibleKeywords": [
+        "Film Grain",
+        "Ink Bleed"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "pixel-art",
+      "keyword": "Pixel Art",
+      "koName": "픽셀 아트",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "픽셀 단위 수작업. 8bit/16bit 제약, 디더링. 레트로 게임 미학",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Dithered Shading",
+        "Grid-Based",
+        "Limited Palette",
+        "Pixel Pattern"
+      ],
+      "incompatibleKeywords": [
+        "Blur",
+        "Gradient Shading",
+        "Watercolor"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "concept-art",
+      "keyword": "Concept Art",
+      "koName": "컨셉 아트",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "영화/게임 디지털 페인팅. 시네마틱 분위기",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Full Bleed",
+        "High Contrast",
+        "Stylized"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "editorial-illustration",
+      "keyword": "Editorial Illustration",
+      "koName": "에디토리얼 일러스트",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "아티클 삽화. 은유적, 중간 디테일 회화 터치",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Asymmetric",
+        "Duotone",
+        "Grainy Gradient",
+        "Stylized"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "children-s-book-illustration",
+      "keyword": "Children's Book Illustration",
+      "koName": "동화 일러스트",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "부드러운 형태, 따뜻한 팔레트, 둥근 캐릭터",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Pastel",
+        "Soft Shading",
+        "Stylized"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint Line",
+        "Glitch",
+        "High Contrast"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "sticker-art",
+      "keyword": "Sticker Art",
+      "koName": "스티커 아트",
+      "category": "Digital Illustration",
+      "role": "Support",
+      "definition": "다이컷 흰색 테두리, 광택 채움. 스티커팩 미학",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Clean Vector Line",
+        "Flat Fill",
+        "Stylized"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Film Grain"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "fashion-illustration",
+      "keyword": "Fashion Illustration",
+      "koName": "패션 일러스트",
+      "category": "Digital Illustration",
+      "role": "Niche",
+      "definition": "늘씬한 비례, 제스처 중심, 의상 디테일 강조",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Desaturated",
+        "Hand-drawn Line",
+        "Stylized"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "geometric-illustration",
+      "keyword": "Geometric Illustration",
+      "koName": "기하학적 일러스트",
+      "category": "Digital Illustration",
+      "role": "Support",
+      "definition": "기본 도형 조합. 모듈러, 추상적",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Grid-Based",
+        "Limited Palette",
+        "Simplified"
+      ],
+      "incompatibleKeywords": [
+        "Hand-drawn Line",
+        "Ink Bleed"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "infographic",
+      "keyword": "Infographic",
+      "koName": "인포그래픽",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "아이콘 + 화살표 + 타이포 + 차트. 데이터/프로세스 시각 요약",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Grid-Based",
+        "Limited Palette",
+        "Simplified"
+      ],
+      "incompatibleKeywords": [
+        "Film Grain",
+        "Ink Bleed"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "blueprint",
+      "keyword": "Blueprint",
+      "koName": "블루프린트",
+      "category": "Digital Illustration",
+      "role": "Support",
+      "definition": "흰색 선 + 청색 배경. 기술 도면 양식, 치수선과 주석",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Blueprint Grid Pattern",
+        "Blueprint Line",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [
+        "Pastel",
+        "Warm",
+        "Watercolor"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "iconography",
+      "keyword": "Iconography",
+      "koName": "아이콘/픽토그램",
+      "category": "Digital Illustration",
+      "role": "Core",
+      "definition": "단일 개념 단순화 기호. 유니버설 심볼, 최소 디테일 즉시 인지",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Clean Vector Line",
+        "Flat Fill",
+        "Monoline",
+        "Simplified"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Film Grain"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "anime",
+      "keyword": "Anime",
+      "koName": "애니메이션",
+      "category": "Anime & Cartoon",
+      "role": "Core",
+      "definition": "일본 애니메이션 양식. 큰 눈, 셀 셰이딩, 표현적 라인워크",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Cel Shading",
+        "Neon/Vivid",
+        "Outline Drawing"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "manga",
+      "keyword": "Manga",
+      "koName": "만화",
+      "category": "Anime & Cartoon",
+      "role": "Core",
+      "definition": "흑백 일본 만화. 스크린톤 중간톤, 패널 그리드",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Hatching",
+        "Monochrome",
+        "Outline Drawing",
+        "Screentone"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "cel-shading",
+      "keyword": "Cel Shading",
+      "koName": "셀 셰이딩",
+      "category": "Anime & Cartoon",
+      "role": "Core",
+      "definition": "경계 뚜렷한 2~3단계 평면 그림자. 3D에도 2D 느낌",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "Three.js"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Limited Palette",
+        "Outline Drawing"
+      ],
+      "incompatibleKeywords": [
+        "Film Grain",
+        "Gradient Shading"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "90s-anime",
+      "keyword": "90s Anime",
+      "koName": "90년대 애니메이션",
+      "category": "Anime & Cartoon",
+      "role": "Support",
+      "definition": "VHS 시대 색감, 필름 그레인. 아키라/공각기동대 무드",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Desaturated",
+        "Film Grain",
+        "Scanline"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "pixar-style-3d",
+      "keyword": "Pixar-style 3D",
+      "koName": "픽사 스타일 3D",
+      "category": "Anime & Cartoon",
+      "role": "Core",
+      "definition": "양식화 CGI. 서브서피스 스킨, 과장 비율",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Pastel",
+        "Soft Shading",
+        "Stylized"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "classic-2d-animation",
+      "keyword": "Classic 2D Animation",
+      "koName": "클래식 2D 애니",
+      "category": "Anime & Cartoon",
+      "role": "Support",
+      "definition": "유려한 선, 수채화 배경, 클래식 캐릭터 비율",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Outline Drawing",
+        "Pastel",
+        "Watercolor"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "western-cartoon",
+      "keyword": "Western Cartoon",
+      "koName": "서양 카툰",
+      "category": "Anime & Cartoon",
+      "role": "Support",
+      "definition": "굵은 외곽선, 과장된 표정, 원색 팔레트",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Neon/Vivid",
+        "Outline Drawing"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "comic-book-art",
+      "keyword": "Comic Book Art",
+      "koName": "코믹북 아트",
+      "category": "Anime & Cartoon",
+      "role": "Core",
+      "definition": "굵은 잉크 외곽선 + 하프톤 음영 + 다이나믹 패널",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Halftone Shading",
+        "High Contrast",
+        "Outline Drawing"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "3d-render",
+      "keyword": "3D Render",
+      "koName": "3D 렌더",
+      "category": "3D Render Style",
+      "role": "Core",
+      "definition": "범용 레이트레이싱 룩. 일반적 3D 광택/GI/그림자",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "3D Model",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glossy Finish",
+        "Matte Finish"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "clay-render",
+      "keyword": "Clay Render",
+      "koName": "클레이 렌더",
+      "category": "3D Render Style",
+      "role": "Core",
+      "definition": "점토처럼 부드럽고 매트한 표면, 둥근 형태, 친근한 입체감",
+      "visualResult": [
+        "부드러운 3D",
+        "무광 표면",
+        "친근한 오브젝트"
+      ],
+      "implementation": [
+        "Three.js",
+        "3D Model",
+        "Generated Raster Image"
+      ],
+      "fit": {
+        "product": [
+          "Education",
+          "Productivity Tool",
+          "E-commerce"
+        ],
+        "tone": [
+          "Warm",
+          "Playful",
+          "Minimal"
+        ],
+        "useCase": [
+          "hero object",
+          "feature visual"
+        ]
+      },
+      "compatibleKeywords": [
+        "Matte Finish",
+        "Pastel",
+        "Soft Shading"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint Line",
+        "Cartographic Illustration",
+        "Cross-hatching",
+        "Engraved Line",
+        "Engraving",
+        "Etching"
+      ],
+      "promptFragment": "soft clay render with matte surfaces and friendly rounded forms",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "wireframe-render",
+      "keyword": "Wireframe Render",
+      "koName": "와이어프레임 렌더",
+      "category": "3D Render Style",
+      "role": "Core",
+      "definition": "3D 객체의 면과 꼭짓점 구조를 선으로만 표현",
+      "visualResult": [
+        "3D 골격",
+        "메시 구조",
+        "기술적 미래감"
+      ],
+      "implementation": [
+        "Three.js",
+        "Static SVG Asset",
+        "CSS"
+      ],
+      "fit": {
+        "product": [
+          "Developer Tool",
+          "AI SaaS",
+          "Creative Tool"
+        ],
+        "tone": [
+          "Technical",
+          "Cinematic"
+        ],
+        "useCase": [
+          "3D interface background"
+        ]
+      },
+      "compatibleKeywords": [
+        "Monochrome",
+        "Monoline",
+        "Wireframe Line"
+      ],
+      "incompatibleKeywords": [
+        "Film Grain",
+        "Watercolor"
+      ],
+      "promptFragment": "wireframe render showing mesh edges, vertices, and spatial structure",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "low-poly",
+      "keyword": "Low-poly",
+      "koName": "로우폴리",
+      "category": "3D Render Style",
+      "role": "Core",
+      "definition": "적은 폴리곤으로 구성된 각진 면과 단순화된 형태",
+      "visualResult": [
+        "각진 면",
+        "단순화된 입체",
+        "레트로/게임 감성"
+      ],
+      "implementation": [
+        "Three.js",
+        "3D Model",
+        "Generated Raster Image"
+      ],
+      "fit": {
+        "product": [
+          "Gaming / Entertainment",
+          "Creative Tool",
+          "Education"
+        ],
+        "tone": [
+          "Playful",
+          "Retro"
+        ],
+        "useCase": [
+          "game visual",
+          "casual hero"
+        ]
+      },
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Limited Palette"
+      ],
+      "incompatibleKeywords": [
+        "Engraved Line",
+        "Ink Bleed"
+      ],
+      "promptFragment": "low-poly 3D form with simplified angular facets and flat shading",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "isometric-render",
+      "keyword": "Isometric Render",
+      "koName": "아이소메트릭 렌더",
+      "category": "3D Render Style",
+      "role": "Support",
+      "definition": "3D 등각 투영 렌더링. 게임, 인포그래픽에 활용",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Isometric",
+        "Limited Palette"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "voxel",
+      "keyword": "Voxel",
+      "koName": "복셀",
+      "category": "3D Render Style",
+      "role": "Core",
+      "definition": "작은 정육면체 블록 단위로 형태를 구성하는 3D 픽셀 아트",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Grid-Based",
+        "Limited Palette"
+      ],
+      "incompatibleKeywords": [
+        "Ink Bleed",
+        "Watercolor"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "toon-render",
+      "keyword": "Toon Render",
+      "koName": "툰 렌더",
+      "category": "3D Render Style",
+      "role": "Core",
+      "definition": "만화처럼 단순화된 명암, 강한 윤곽, 비현실적 색감의 3D",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Cel Shading",
+        "Limited Palette",
+        "Outline Drawing"
+      ],
+      "incompatibleKeywords": [
+        "Film Grain"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ambient-occlusion-render",
+      "keyword": "Ambient Occlusion Render",
+      "koName": "앰비언트 오클루전 렌더",
+      "category": "3D Render Style",
+      "role": "Support",
+      "definition": "접촉부와 구석의 그림자를 강조해 구조와 깊이를 드러냄",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "3D Model"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Matte Finish",
+        "Monochrome"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ray-traced-render",
+      "keyword": "Ray-traced Render",
+      "koName": "레이트레이스 렌더",
+      "category": "3D Render Style",
+      "role": "Support",
+      "definition": "빛의 반사, 굴절, 그림자를 물리적으로 계산한 사실적 렌더링",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "3D Model"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glass Material",
+        "Glossy Finish",
+        "Metallic Material"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "photoreal-render",
+      "keyword": "Photoreal Render",
+      "koName": "포토리얼 렌더",
+      "category": "3D Render Style",
+      "role": "Scaffold",
+      "definition": "실제 사진처럼 보이는 재질, 빛, 카메라 표현",
+      "visualResult": [],
+      "implementation": [
+        "3D Model",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glossy Finish",
+        "Metallic Material"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "claymation",
+      "keyword": "Claymation",
+      "koName": "클레이메이션",
+      "category": "3D Render Style",
+      "role": "Support",
+      "definition": "점토 인형 질감. 손가락 자국, 스톱모션 느낌",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Matte Finish",
+        "Soft Light",
+        "Stylized"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint Line",
+        "Chrome Material"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "origami-papercraft",
+      "keyword": "Origami / Papercraft",
+      "koName": "오리가미/페이퍼크래프트",
+      "category": "3D Render Style",
+      "role": "Support",
+      "definition": "접힌 종이 기하. 주름 그림자, 레이어 간격",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "Three.js"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Layered/Overlap",
+        "Matte Finish",
+        "Pastel"
+      ],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Neon"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "matte-finish",
+      "keyword": "Matte Finish",
+      "koName": "매트 마감",
+      "category": "3D Material Finish",
+      "role": "Support",
+      "definition": "빛 반사가 적고 부드러운 표면의 차분한 재질",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "CSS",
+        "3D Model"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Clay Render",
+        "Soft Shading"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "glossy-finish",
+      "keyword": "Glossy Finish",
+      "koName": "글로시 마감",
+      "category": "3D Material Finish",
+      "role": "Support",
+      "definition": "반짝이는 표면 반사와 매끄러운 재질감",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "CSS",
+        "3D Model"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Ray-traced Render",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [
+        "Matte Paper",
+        "Paper Grain"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "glass-material",
+      "keyword": "Glass Material",
+      "koName": "유리 재질",
+      "category": "3D Material Finish",
+      "role": "Core",
+      "definition": "투명도, 굴절, 반사, 두께감을 가진 유리 재질",
+      "visualResult": [
+        "투명도",
+        "굴절",
+        "프리미엄 테크 느낌"
+      ],
+      "implementation": [
+        "Three.js",
+        "WebGL",
+        "CSS"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Fintech",
+          "Fashion / Beauty"
+        ],
+        "tone": [
+          "Premium",
+          "Minimal",
+          "Technical"
+        ],
+        "useCase": [
+          "hero object",
+          "abstract 3D"
+        ]
+      },
+      "compatibleKeywords": [
+        "Blur",
+        "Glow",
+        "Refraction"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Etching",
+        "Ink Drawing",
+        "Letterpress",
+        "Paper Grain",
+        "Woodcut"
+      ],
+      "promptFragment": "transparent glass material with subtle refraction, thickness, and clean reflections",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "frosted-glass-material",
+      "keyword": "Frosted Glass Material",
+      "koName": "프로스티드 글래스",
+      "category": "3D Material Finish",
+      "role": "Core",
+      "definition": "반투명하고 흐릿한 유리 표면, 부드러운 내부 확산감",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "CSS",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Blur",
+        "Glow",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Engraved Line"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "chrome-material",
+      "keyword": "Chrome Material",
+      "koName": "크롬 재질",
+      "category": "3D Material Finish",
+      "role": "Core",
+      "definition": "거울 같은 금속 반사와 차갑고 미래적인 표면감",
+      "visualResult": [
+        "거울 반사",
+        "미래적 금속감",
+        "차가운 고급감"
+      ],
+      "implementation": [
+        "Three.js",
+        "WebGL"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Fashion / Beauty",
+          "Creative Tool"
+        ],
+        "tone": [
+          "Premium",
+          "Bold",
+          "Technical"
+        ],
+        "useCase": [
+          "hero object",
+          "brand visual"
+        ]
+      },
+      "compatibleKeywords": [
+        "High Contrast",
+        "Ray-traced Render"
+      ],
+      "incompatibleKeywords": [
+        "Botanical Illustration",
+        "Charcoal Drawing",
+        "Claymation",
+        "Cyanotype",
+        "Grainy Gradient",
+        "Ink Bleed",
+        "Ink Wash",
+        "Linocut",
+        "Origami / Papercraft",
+        "Paper Grain",
+        "Risograph",
+        "Ukiyo-e",
+        "Watercolor"
+      ],
+      "promptFragment": "polished chrome material with mirror-like reflection and futuristic finish",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "metallic-material",
+      "keyword": "Metallic Material",
+      "koName": "금속 재질",
+      "category": "3D Material Finish",
+      "role": "Core",
+      "definition": "금속의 반사, 거칠기, 무게감을 표현하는 재질",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "WebGL",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Hard Light",
+        "Ray-traced Render"
+      ],
+      "incompatibleKeywords": [
+        "Paper Grain",
+        "Watercolor"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ceramic-material",
+      "keyword": "Ceramic Material",
+      "koName": "세라믹 재질",
+      "category": "3D Material Finish",
+      "role": "Core",
+      "definition": "도자기처럼 매끄럽거나 은은한 광택이 있는 단단한 표면",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "3D Model"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Matte Finish",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "plastic-material",
+      "keyword": "Plastic Material",
+      "koName": "플라스틱 재질",
+      "category": "3D Material Finish",
+      "role": "Support",
+      "definition": "합성수지 같은 가벼운 반사, 부드러운 색면",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Pastel",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "translucent-material",
+      "keyword": "Translucent Material",
+      "koName": "반투명 재질",
+      "category": "3D Material Finish",
+      "role": "Core",
+      "definition": "빛이 내부를 통과하는 듯한 깊이감과 반투명성",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "WebGL",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Blur",
+        "Glow",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Engraved Line"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "holographic-material",
+      "keyword": "Holographic Material",
+      "koName": "홀로그래픽 재질",
+      "category": "3D Material Finish",
+      "role": "Core",
+      "definition": "무지갯빛 반사와 각도에 따른 색 변화가 나타나는 미래적 표면",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "WebGL",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Chromatic Aberration",
+        "Glow",
+        "Neon/Vivid"
+      ],
+      "incompatibleKeywords": [
+        "Etching",
+        "Paper Grain",
+        "Woodcut"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "iridescent-material",
+      "keyword": "Iridescent Material",
+      "koName": "이리데슨트 재질",
+      "category": "3D Material Finish",
+      "role": "Core",
+      "definition": "조개껍질이나 오일막처럼 각도에 따라 색이 달라지는 표면",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glow",
+        "Pastel"
+      ],
+      "incompatibleKeywords": [
+        "Engraved Line",
+        "Woodcut"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "studio-photography",
+      "keyword": "Studio Photography",
+      "koName": "스튜디오 포토",
+      "category": "Photography",
+      "role": "Core",
+      "definition": "통제된 인공 조명, 심리스 배경, 선명. 제품 촬영",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Centered",
+        "Matte",
+        "Realistic",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "editorial-photography",
+      "keyword": "Editorial Photography",
+      "koName": "에디토리얼 포토",
+      "category": "Photography",
+      "role": "Support",
+      "definition": "매거진 스타일. 연출된 인물/라이프스타일",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Desaturated",
+        "Rule of Thirds",
+        "Shallow Depth of Field"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "documentary-photography",
+      "keyword": "Documentary Photography",
+      "koName": "다큐멘터리 포토",
+      "category": "Photography",
+      "role": "Niche",
+      "definition": "연출 없는 저널리즘. 현장광, 솔직한 포착",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Deep Focus",
+        "Full Color",
+        "Realistic"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "street-photography",
+      "keyword": "Street Photography",
+      "koName": "스트릿 포토",
+      "category": "Photography",
+      "role": "Support",
+      "definition": "도시 캔디드. 가용광, 움직임, 일상 순간",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Full Color",
+        "High Contrast",
+        "Tight Crop"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "fashion-photography",
+      "keyword": "Fashion Photography",
+      "koName": "패션 포토",
+      "category": "Photography",
+      "role": "Niche",
+      "definition": "하이키, 모델 중심, 의상 강조",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Desaturated",
+        "Shallow Depth of Field",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "food-photography",
+      "keyword": "Food Photography",
+      "koName": "푸드 포토",
+      "category": "Photography",
+      "role": "Support",
+      "definition": "탑다운/45°, 스타일링, 식욕 자극 조명",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Bird's Eye View",
+        "Shallow Depth of Field",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "macro-photography",
+      "keyword": "Macro Photography",
+      "koName": "매크로 포토",
+      "category": "Photography",
+      "role": "Support",
+      "definition": "극접사. 매우 얕은 심도, 미세 디테일 확대",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Macro View",
+        "Shallow Depth of Field",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "landscape-photography",
+      "keyword": "Landscape Photography",
+      "koName": "풍경 포토",
+      "category": "Photography",
+      "role": "Core",
+      "definition": "넓은 풍경. 골든아워, 전경 앵커, 깊은 심도",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Deep Focus",
+        "Full Bleed",
+        "Full Color",
+        "Golden Hour"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "analog-film",
+      "keyword": "Analog Film",
+      "koName": "아날로그 필름",
+      "category": "Photography",
+      "role": "Core",
+      "definition": "필름 그레인, 따뜻한 색 캐스트, 바랜 색감. 35mm",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Desaturated",
+        "Film Grain",
+        "Sepia/Warm Cast"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "cinestill",
+      "keyword": "Cinestill",
+      "koName": "시네스틸",
+      "category": "Photography",
+      "role": "Support",
+      "definition": "시네마틱 그레인, 보케, 할레이션. 야간 필름 느낌",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Bokeh",
+        "Film Grain",
+        "Neon Glow"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "polaroid",
+      "keyword": "Polaroid",
+      "koName": "폴라로이드",
+      "category": "Photography",
+      "role": "Support",
+      "definition": "흰색 테두리, 바랜 색조, 정사각 크롭, 소프트 포커스",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Desaturated",
+        "Sepia/Warm Cast",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "b-w-photography",
+      "keyword": "B&W Photography",
+      "koName": "흑백 사진",
+      "category": "Photography",
+      "role": "Core",
+      "definition": "흑백 톤. 명암과 질감만으로 구성",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Film Grain",
+        "High Contrast",
+        "Monochrome"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "double-exposure",
+      "keyword": "Double Exposure",
+      "koName": "이중노출",
+      "category": "Photography",
+      "role": "Support",
+      "definition": "두 이미지 겹쳐 투과. 실루엣 안 풍경 등 초현실",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Layered/Overlap",
+        "Silhouette"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "long-exposure",
+      "keyword": "Long Exposure",
+      "koName": "장노출",
+      "category": "Photography",
+      "role": "Niche",
+      "definition": "장노출. 빛 궤적, 물 실크 표면, 움직임 흔적",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Full Bleed",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "synthwave",
+      "keyword": "Synthwave",
+      "koName": "신스웨이브",
+      "category": "Retro-Digital",
+      "role": "Core",
+      "definition": "80년대 레트로퓨처리즘. 네온 그리드, 크롬 태양, 보라-핑크-시안",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "CSS",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Chrome Material",
+        "Neon Glow",
+        "Neon/Vivid",
+        "One-Point Perspective"
+      ],
+      "incompatibleKeywords": [
+        "Paper Grain",
+        "Watercolor"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "vaporwave",
+      "keyword": "Vaporwave",
+      "koName": "베이퍼웨이브",
+      "category": "Retro-Digital",
+      "role": "Core",
+      "definition": "90년대 인터넷. 파스텔 핑크/틸, 글리치, Win95 UI",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Chrome Material",
+        "Glitch",
+        "Pastel",
+        "Scanline"
+      ],
+      "incompatibleKeywords": [
+        "Etching",
+        "Medical Illustration",
+        "Paper Grain"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "cyberpunk",
+      "keyword": "Cyberpunk",
+      "koName": "사이버펑크",
+      "category": "Retro-Digital",
+      "role": "Core",
+      "definition": "네온 디스토피아. 비, 홀로그램, 고밀도 도시",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "High Contrast",
+        "Neon Glow",
+        "Neon/Vivid",
+        "One-Point Perspective"
+      ],
+      "incompatibleKeywords": [
+        "Paper Grain",
+        "Pastel"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "y2k-futurism",
+      "keyword": "Y2K Futurism",
+      "koName": "Y2K 퓨처리즘",
+      "category": "Retro-Digital",
+      "role": "Support",
+      "definition": "반투명 크롬 블롭, 라임/실버, iMac G3 플라스틱",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Chrome Material",
+        "Glossy Finish",
+        "Pastel"
+      ],
+      "incompatibleKeywords": [
+        "Etching",
+        "Paper Grain"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "frutiger-aero",
+      "keyword": "Frutiger Aero",
+      "koName": "프루티거 아에로",
+      "category": "Retro-Digital",
+      "role": "Support",
+      "definition": "Vista/iOS6 스큐어모피즘. 광택 UI, 보케, 자연+기술",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Bokeh",
+        "Glossy Finish",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint Line",
+        "Monochrome"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "digital-brutalism",
+      "keyword": "Digital Brutalism",
+      "koName": "디지털 브루탈리즘",
+      "category": "Retro-Digital",
+      "role": "Niche",
+      "definition": "콘크리트 텍스처, 로 타이포, 로파이 웹",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Concrete Texture",
+        "High Contrast",
+        "Monochrome"
+      ],
+      "incompatibleKeywords": [
+        "Pastel",
+        "Soft Light",
+        "Soft Shading"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "mesh-gradient",
+      "keyword": "Mesh Gradient",
+      "koName": "메시 그라디언트",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "여러 색상 포인트가 유기적으로 섞이며 부드러운 색면 흐름",
+      "visualResult": [
+        "부드러운 색 흐름",
+        "현대적 배경",
+        "추상적 깊이"
+      ],
+      "implementation": [
+        "CSS",
+        "Canvas",
+        "WebGL",
+        "Generated Raster Image"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Creative Tool",
+          "Portfolio / Agency"
+        ],
+        "tone": [
+          "Premium",
+          "Minimal",
+          "Playful"
+        ],
+        "useCase": [
+          "background",
+          "hero visual"
+        ]
+      },
+      "compatibleKeywords": [
+        "Aurora Gradient",
+        "Glass Material",
+        "Glow",
+        "Grainy Gradient"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint Line",
+        "Etching",
+        "Woodcut"
+      ],
+      "promptFragment": "soft mesh gradient with organic color blending and subtle atmospheric depth",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "aurora-gradient",
+      "keyword": "Aurora Gradient",
+      "koName": "오로라 그라디언트",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "오로라처럼 흐릿하고 빛나는 색 띠가 겹치는 추상 그래픽",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "Canvas",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Blur",
+        "Glow",
+        "Mesh Gradient"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Engraved Line"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "liquid-gradient",
+      "keyword": "Liquid Gradient",
+      "koName": "리퀴드 그라디언트",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "액체처럼 흐르는 색상 경계와 유동적인 색 변화",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "Canvas",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Blob Shape",
+        "Glow"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint Line",
+        "Technical Line"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "grainy-gradient",
+      "keyword": "Grainy Gradient",
+      "koName": "그레이니 그라디언트",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "그라디언트 위에 노이즈나 입자를 더해 질감과 깊이를 만듦",
+      "visualResult": [
+        "노이즈 입자",
+        "부드러운 색면",
+        "디지털 질감"
+      ],
+      "implementation": [
+        "CSS",
+        "SVG Filter",
+        "Canvas"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Fintech",
+          "Wellness"
+        ],
+        "tone": [
+          "Minimal",
+          "Warm",
+          "Premium"
+        ],
+        "useCase": [
+          "landing background",
+          "presentation visual"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Mesh Gradient",
+        "Noise Texture"
+      ],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Glossy Surface"
+      ],
+      "promptFragment": "grainy gradient with subtle noise texture over smooth color transitions",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "blob-shape",
+      "keyword": "Blob Shape",
+      "koName": "블롭 형태",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "둥글고 불규칙한 유기적 덩어리 형태",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "Static SVG Asset",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Gradient Shading",
+        "Pastel",
+        "Soft Shading"
+      ],
+      "incompatibleKeywords": [
+        "Blueprint Line",
+        "Technical Line"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "metaball",
+      "keyword": "Metaball",
+      "koName": "메타볼",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "여러 유기적 덩어리가 서로 합쳐지는 듯한 액체형 추상 구조",
+      "visualResult": [],
+      "implementation": [
+        "Canvas",
+        "WebGL",
+        "Three.js"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Blob Shape",
+        "Glow"
+      ],
+      "incompatibleKeywords": [
+        "Cross-hatching",
+        "Engraved Line"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "membrane-form",
+      "keyword": "Membrane Form",
+      "koName": "멤브레인 형태",
+      "category": "Abstract & Generative",
+      "role": "Support",
+      "definition": "얇은 막이나 표면이 늘어나고 휘어진 듯한 유기적 구조",
+      "visualResult": [],
+      "implementation": [
+        "WebGL",
+        "Three.js"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glow",
+        "Translucent Material"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "particle-field",
+      "keyword": "Particle Field",
+      "koName": "파티클 필드",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "많은 입자가 공간에 분포해 흐름, 에너지, 데이터를 표현",
+      "visualResult": [
+        "입자 분포",
+        "데이터/에너지 느낌",
+        "동적 배경"
+      ],
+      "implementation": [
+        "Canvas",
+        "WebGL",
+        "Three.js"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Data Product",
+          "Developer Tool"
+        ],
+        "tone": [
+          "Technical",
+          "Cinematic"
+        ],
+        "useCase": [
+          "interactive background",
+          "AI visual"
+        ]
+      },
+      "compatibleKeywords": [
+        "Glow",
+        "Neon/Vivid",
+        "Point Cloud"
+      ],
+      "incompatibleKeywords": [
+        "Etching",
+        "Paper Grain"
+      ],
+      "promptFragment": "subtle particle field suggesting data, energy, and distributed intelligence",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "point-cloud",
+      "keyword": "Point Cloud",
+      "koName": "포인트 클라우드",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "점들의 집합으로 형태, 공간, 데이터 구조를 표현",
+      "visualResult": [],
+      "implementation": [
+        "Canvas",
+        "WebGL",
+        "Three.js"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Monochrome",
+        "Particle Field"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "vector-field",
+      "keyword": "Vector Field",
+      "koName": "벡터 필드",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "방향과 힘을 가진 선이나 화살표 흐름으로 보이지 않는 장을 표현",
+      "visualResult": [],
+      "implementation": [
+        "Canvas",
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flow Field",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "flow-field",
+      "keyword": "Flow Field",
+      "koName": "플로우 필드",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "알고리즘적 흐름을 따라 선이나 입자가 이동하는 생성형 그래픽",
+      "visualResult": [
+        "유동적 선 흐름",
+        "알고리즘 감각",
+        "동적 패턴"
+      ],
+      "implementation": [
+        "Canvas",
+        "WebGL"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Creative Tool",
+          "Data Product"
+        ],
+        "tone": [
+          "Technical",
+          "Cinematic",
+          "Premium"
+        ],
+        "useCase": [
+          "generative background"
+        ]
+      },
+      "compatibleKeywords": [
+        "Monoline",
+        "Procedural Lines",
+        "Vector Field"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "algorithmic flow field with lines or particles following invisible vector forces",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "waveform",
+      "keyword": "Waveform",
+      "koName": "웨이브폼",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "파동, 소리, 신호, 에너지의 흐름을 선형 또는 추상 곡선으로 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "Canvas",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glow",
+        "Limited Palette",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "orbital-system",
+      "keyword": "Orbital System",
+      "koName": "궤도 시스템",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "중심과 주변 궤도, 회전 관계를 이용해 시스템을 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "Canvas",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glow",
+        "Monoline",
+        "Radial"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "radial-system",
+      "keyword": "Radial System",
+      "koName": "방사형 시스템",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "중심에서 바깥으로 퍼지는 원형 또는 방사형 구조",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Monoline",
+        "Radial"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "spiral-system",
+      "keyword": "Spiral System",
+      "koName": "나선형 시스템",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "성장, 반복, 순환, 복잡성을 나선 형태로 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "topographic-lines",
+      "keyword": "Topographic Lines",
+      "koName": "지형 등고선",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "선의 간격과 형태로 높낮이, 흐름, 표면 구조를 표현",
+      "visualResult": [
+        "등고선",
+        "지형적 흐름",
+        "데이터 표면"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "Canvas"
+      ],
+      "fit": {
+        "product": [
+          "Data Product",
+          "AI SaaS",
+          "Travel / Hospitality"
+        ],
+        "tone": [
+          "Technical",
+          "Editorial",
+          "Minimal"
+        ],
+        "useCase": [
+          "background pattern",
+          "data metaphor"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Topographic Pattern"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "topographic contour lines forming an abstract data landscape",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "voronoi-cells",
+      "keyword": "Voronoi Cells",
+      "koName": "보로노이 셀",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "점 사이의 거리 관계로 분할된 세포형 패턴",
+      "visualResult": [],
+      "implementation": [
+        "Canvas",
+        "Static SVG Asset",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "crystalline-structure",
+      "keyword": "Crystalline Structure",
+      "koName": "결정 구조",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "결정처럼 각진 면, 반복적 격자, 기하학적 성장 패턴",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glass Material",
+        "Metallic Material"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "fractal-form",
+      "keyword": "Fractal Form",
+      "koName": "프랙탈 형태",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "작은 구조가 반복되어 큰 구조를 이루는 자기유사적 패턴",
+      "visualResult": [],
+      "implementation": [
+        "Canvas",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "parametric-surface",
+      "keyword": "Parametric Surface",
+      "koName": "파라메트릭 표면",
+      "category": "Abstract & Generative",
+      "role": "Core",
+      "definition": "수학적 파라미터로 생성된 곡면, 격자, 유동적 표면",
+      "visualResult": [],
+      "implementation": [
+        "Three.js",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Glass Material",
+        "Glow",
+        "Metallic Material"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "procedural-lines",
+      "keyword": "Procedural Lines",
+      "koName": "절차적 선",
+      "category": "Abstract & Generative",
+      "role": "Support",
+      "definition": "알고리즘 규칙에 따라 생성된 반복적이거나 유기적인 선",
+      "visualResult": [],
+      "implementation": [
+        "Canvas",
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flow Field",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "isometric",
+      "keyword": "Isometric",
+      "koName": "아이소메트릭",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "세 축이 동일한 비율로 보이는 등각 투영",
+      "visualResult": [
+        "입체 구조",
+        "원근 왜곡 적음",
+        "시스템 설명에 적합"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "Three.js",
+        "CSS"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Developer Tool",
+          "Fintech",
+          "Education"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal"
+        ],
+        "useCase": [
+          "hero graphic",
+          "system diagram"
+        ]
+      },
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Isometric Illustration",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "isometric projection showing structured layers without dramatic perspective distortion",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "axonometric",
+      "keyword": "Axonometric",
+      "koName": "축측 투영",
+      "category": "Projection & Structural View",
+      "role": "Scaffold",
+      "definition": "원근감 없이 여러 축을 기준으로 입체를 보여주는 투영 상위 범주",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Isometric",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "orthographic",
+      "keyword": "Orthographic",
+      "koName": "정투영",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "대상의 한 면을 왜곡 없이 평면적으로 보여주는 기술 제도식 투영",
+      "visualResult": [
+        "도면식 정면",
+        "치수 정확성",
+        "차분한 구조"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": {
+        "product": [
+          "Developer Tool",
+          "Education",
+          "B2B Enterprise"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal"
+        ],
+        "useCase": [
+          "spec sheet",
+          "technical diagram"
+        ]
+      },
+      "compatibleKeywords": [
+        "Blueprint Line",
+        "Measurement Diagram",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "orthographic technical view with no perspective distortion",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "oblique-projection",
+      "keyword": "Oblique Projection",
+      "koName": "사투영",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "정면 비율을 유지하고 깊이 축을 비스듬히 표현하는 투영",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "eye-level",
+      "keyword": "Eye Level",
+      "koName": "아이 레벨",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "시선 높이 정면 앵글. 친근하고 자연스러운 기본값",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Centered",
+        "Realistic",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "bird-s-eye-view",
+      "keyword": "Bird's Eye View",
+      "koName": "조감/탑다운",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "직하방/고각 시점. 전체 구조/패턴. 음식 촬영 포함",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Centered",
+        "Grid-Based"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "worm-s-eye-view",
+      "keyword": "Worm's Eye View",
+      "koName": "극저각",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "극저각 올려보기. 위압감, 장대함, 건축 스케일",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Full Bleed",
+        "Hard Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "aerial-drone",
+      "keyword": "Aerial/Drone",
+      "koName": "항공/드론",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "항공 촬영 시점. 도시/자연 패턴, 넓은 스케일",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Deep Focus",
+        "Full Bleed"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "over-the-shoulder",
+      "keyword": "Over-the-Shoulder",
+      "koName": "어깨 너머",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "어깨 너머 시점. 맥락 속 피사체, 앱 사용 장면",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Shallow Depth of Field"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "one-point-perspective",
+      "keyword": "One-Point Perspective",
+      "koName": "1점 투시",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "단일 소실점. 터널, 복도의 깊이감과 집중 유도",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Full Bleed",
+        "High Contrast"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "flat-2d",
+      "keyword": "Flat (2D)",
+      "koName": "2D 평면",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "깊이감 없는 완전 평면. 아이콘, 패턴, UI 요소 기본",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Flat Fill",
+        "Grid-Based",
+        "Monoline"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "plan-view",
+      "keyword": "Plan View",
+      "koName": "평면도",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "대상을 위에서 내려다본 도면식 시점",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Blueprint Line",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "elevation-view",
+      "keyword": "Elevation View",
+      "koName": "입면도",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "대상의 정면이나 측면을 수직 투영으로 보여주는 도면식 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Orthographic",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "top-down-view",
+      "keyword": "Top-down View",
+      "koName": "탑다운 뷰",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "대상을 수직으로 내려다보는 시점. 지도, 데이터 맵에 적합",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Bird's Eye View",
+        "Grid-Based"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "cutaway-view",
+      "keyword": "Cutaway View",
+      "koName": "컷어웨이 뷰",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "대상의 일부를 잘라내 내부 구조를 동시에 보여주는 설명형 시각화",
+      "visualResult": [
+        "내부 구조 노출",
+        "설명형 절단면",
+        "교육적 명료함"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "Healthcare",
+          "Education",
+          "Developer Tool"
+        ],
+        "tone": [
+          "Technical",
+          "Editorial"
+        ],
+        "useCase": [
+          "explanatory diagram"
+        ]
+      },
+      "compatibleKeywords": [
+        "Annotation Diagram",
+        "Cross-section View",
+        "Technical Illustration"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "cutaway view revealing internal layers and hidden structure",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "cross-section-view",
+      "keyword": "Cross-section View",
+      "koName": "단면도",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "대상을 특정 평면으로 절단해 내부 단면 구조를 보여주는 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Cutaway View",
+        "Hatching",
+        "Technical Illustration"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "exploded-view",
+      "keyword": "Exploded View",
+      "koName": "분해도",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "부품을 분리해 띄워놓음으로써 조립 구조와 관계를 보여줌",
+      "visualResult": [
+        "분리된 부품",
+        "조립 구조",
+        "제품 내부 로직"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Three.js"
+      ],
+      "fit": {
+        "product": [
+          "Developer Tool",
+          "Hardware",
+          "Education",
+          "AI SaaS"
+        ],
+        "tone": [
+          "Technical",
+          "Premium"
+        ],
+        "useCase": [
+          "feature explanation",
+          "system architecture"
+        ]
+      },
+      "compatibleKeywords": [
+        "Annotation Diagram",
+        "Isometric",
+        "Technical Illustration"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "exploded view with separated components and clear assembly relationships",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "x-ray-view",
+      "keyword": "X-ray View",
+      "koName": "엑스레이 뷰",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "외부를 투과해 내부 구조가 보이는 것처럼 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Monochrome",
+        "Transparent View",
+        "Wireframe Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "transparent-view",
+      "keyword": "Transparent View",
+      "koName": "투명 뷰",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "외피나 표면을 반투명하게 처리해 내부 레이어를 드러냄",
+      "visualResult": [
+        "겹쳐 보이는 내부",
+        "반투명 레이어",
+        "시스템 투시"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "Three.js"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Data Product",
+          "Healthcare"
+        ],
+        "tone": [
+          "Technical",
+          "Premium"
+        ],
+        "useCase": [
+          "layered system visual"
+        ]
+      },
+      "compatibleKeywords": [
+        "Frosted Glass Material",
+        "X-ray View"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "transparent layered view revealing internal systems through translucent surfaces",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "macro-view",
+      "keyword": "Macro View",
+      "koName": "매크로 뷰",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "대상을 매우 가까이 확대해 질감, 구조, 세부 형태를 강조",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Detailed",
+        "Shallow Depth of Field"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "microscopic-view",
+      "keyword": "Microscopic View",
+      "koName": "현미경 뷰",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "미세 구조, 세포, 입자, 재료 패턴을 현미경처럼 확대",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Point Cloud",
+        "Voronoi Cells"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "topographic-view",
+      "keyword": "Topographic View",
+      "koName": "지형도식 뷰",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "등고선과 고도 정보를 중심으로 지형이나 표면 구조를 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Monoline",
+        "Topographic Lines",
+        "Topographic Pattern"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "shallow-depth-of-field",
+      "keyword": "Shallow Depth of Field",
+      "koName": "얕은 심도",
+      "category": "Projection & Structural View",
+      "role": "Core",
+      "definition": "피사체 선명 + 배경 블러(보케). 주제 분리",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Bokeh",
+        "Soft Light"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "deep-focus",
+      "keyword": "Deep Focus",
+      "koName": "딥 포커스",
+      "category": "Projection & Structural View",
+      "role": "Support",
+      "definition": "전경~배경 모두 선명. 정보 전달 목적",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Crisp/Clean",
+        "Landscape Photography"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "tilt-shift",
+      "keyword": "Tilt-Shift",
+      "koName": "틸트시프트",
+      "category": "Projection & Structural View",
+      "role": "Niche",
+      "definition": "선택적 블러 미니어처 효과",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Bird's Eye View",
+        "Blur"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "schematic-diagram",
+      "keyword": "Schematic Diagram",
+      "koName": "스키매틱 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "구성 요소와 관계를 단순화해 보여주는 구조 중심 다이어그램",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "technical-diagram",
+      "keyword": "Technical Diagram",
+      "koName": "테크니컬 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Scaffold",
+      "definition": "기술적 대상의 구조와 원리를 설명하는 넓은 범주의 다이어그램",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "blueprint-diagram",
+      "keyword": "Blueprint Diagram",
+      "koName": "블루프린트 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "청사진처럼 치수선, 보조선, 설계선으로 구성된 설계도형 다이어그램",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "system-diagram",
+      "keyword": "System Diagram",
+      "koName": "시스템 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Scaffold",
+      "definition": "여러 구성 요소와 상호작용을 하나의 시스템으로 보여주는 관계 그래픽",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "process-diagram",
+      "keyword": "Process Diagram",
+      "koName": "프로세스 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "단계, 순서, 절차를 시각적으로 정리한 다이어그램",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "flow-diagram",
+      "keyword": "Flow Diagram",
+      "koName": "플로우 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "입력, 처리, 출력, 분기 등 흐름의 방향성을 표현",
+      "visualResult": [
+        "방향성",
+        "절차",
+        "입출력 흐름"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "Productivity Tool",
+          "AI SaaS",
+          "Education"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal"
+        ],
+        "useCase": [
+          "process explanation",
+          "onboarding"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "clear flow diagram showing input, process, output, and directional movement",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "network-diagram",
+      "keyword": "Network Diagram",
+      "koName": "네트워크 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "노드와 연결선으로 관계망, 연결 구조를 표현",
+      "visualResult": [
+        "노드와 선",
+        "관계망",
+        "연결 구조"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Data Product",
+          "Developer Tool"
+        ],
+        "tone": [
+          "Technical",
+          "Cinematic"
+        ],
+        "useCase": [
+          "data visual",
+          "AI agent map"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "network diagram with sparse nodes, clean connection lines, and readable clusters",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "node-link-diagram",
+      "keyword": "Node-link Diagram",
+      "koName": "노드-링크 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "점과 선을 이용해 개체와 관계를 추상적으로 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "circuit-diagram",
+      "keyword": "Circuit Diagram",
+      "koName": "회로 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "전기 회로나 논리 구조를 기호와 연결선으로 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "architecture-diagram",
+      "keyword": "Architecture Diagram",
+      "koName": "아키텍처 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "소프트웨어, 서비스, 인프라 구성 요소의 구조를 보여줌",
+      "visualResult": [
+        "시스템 구성",
+        "모듈 관계",
+        "기술 제품 설명"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Developer Tool",
+          "B2B Enterprise",
+          "Data Product"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal"
+        ],
+        "useCase": [
+          "landing hero",
+          "feature diagram"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "clean software architecture diagram with modular blocks and clear connection logic",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "pipeline-diagram",
+      "keyword": "Pipeline Diagram",
+      "koName": "파이프라인 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "데이터, 작업, 생산 과정이 단계적으로 이동하는 구조",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "stack-diagram",
+      "keyword": "Stack Diagram",
+      "koName": "스택 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "여러 계층이나 레이어가 쌓인 구조를 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "layer-diagram",
+      "keyword": "Layer Diagram",
+      "koName": "레이어 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "시스템, 정보, 시각 요소의 층위를 분리해 보여줌",
+      "visualResult": [
+        "층위 구조",
+        "스택",
+        "시스템 분해"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Developer Tool",
+          "Data Product"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal",
+          "Premium"
+        ],
+        "useCase": [
+          "design system explanation",
+          "architecture visual"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "layer diagram separating system levels into clear stacked visual hierarchy",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "component-diagram",
+      "keyword": "Component Diagram",
+      "koName": "컴포넌트 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "부품, 모듈, 구성 요소의 관계와 역할을 보여줌",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "annotation-diagram",
+      "keyword": "Annotation Diagram",
+      "koName": "주석 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "대상 주변에 라벨, 선, 설명을 붙여 세부 정보를 설명",
+      "visualResult": [
+        "콜아웃",
+        "라벨",
+        "설명선"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "Education",
+          "Developer Tool",
+          "Healthcare"
+        ],
+        "tone": [
+          "Technical",
+          "Editorial"
+        ],
+        "useCase": [
+          "spec image",
+          "article illustration"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "annotation diagram with precise callout lines and minimal explanatory labels",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "measurement-diagram",
+      "keyword": "Measurement Diagram",
+      "koName": "측정 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "치수선, 각도, 스케일, 비율을 강조해 구조를 설명",
+      "visualResult": [
+        "치수선",
+        "각도 표시",
+        "스펙시트 느낌"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "Developer Tool",
+          "Education",
+          "B2B Enterprise"
+        ],
+        "tone": [
+          "Technical",
+          "Premium"
+        ],
+        "useCase": [
+          "spec sheet",
+          "technical thumbnail"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "measurement diagram with dimension lines, angle marks, and scale indicators",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "spec-sheet-illustration",
+      "keyword": "Spec Sheet Illustration",
+      "koName": "스펙시트 일러스트",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "제품이나 시스템의 사양을 도면과 라벨로 정리한 설명형 그래픽",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "taxonomy-map",
+      "keyword": "Taxonomy Map",
+      "koName": "택소노미 맵",
+      "category": "Diagrammatic Representation",
+      "role": "Support",
+      "definition": "개념, 카테고리, 키워드의 분류 구조를 시각적으로 보여줌",
+      "visualResult": [
+        "분류 구조",
+        "계층",
+        "개념 지도"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": {
+        "product": [
+          "Education",
+          "Developer Tool",
+          "Creative Tool"
+        ],
+        "tone": [
+          "Technical",
+          "Editorial"
+        ],
+        "useCase": [
+          "learning material",
+          "system explanation"
+        ]
+      },
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "taxonomy map showing hierarchical categories with clean branches and readable structure",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "constellation-diagram",
+      "keyword": "Constellation Diagram",
+      "koName": "별자리형 다이어그램",
+      "category": "Diagrammatic Representation",
+      "role": "Core",
+      "definition": "분산된 노드가 별자리처럼 연결되어 관계와 군집을 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "SVG Linework",
+        "Hybrid Image + Code Overlay"
+      ],
+      "fit": null,
+      "compatibleKeywords": [
+        "Limited Palette",
+        "Monoline",
+        "Technical Line"
+      ],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "centered",
+      "keyword": "Centered",
+      "koName": "중앙 배치",
+      "category": "Composition & Framing",
+      "role": "Core",
+      "definition": "피사체 프레임 정중앙. 안정감, 대칭, 포멀",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "rule-of-thirds",
+      "keyword": "Rule of Thirds",
+      "koName": "3분할 법칙",
+      "category": "Composition & Framing",
+      "role": "Core",
+      "definition": "3분할 교차점 배치. 자연스러운 시선 흐름",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "asymmetric",
+      "keyword": "Asymmetric",
+      "koName": "비대칭",
+      "category": "Composition & Framing",
+      "role": "Support",
+      "definition": "의도적 비대칭. 긴장감, 동적, 현대적",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "diagonal",
+      "keyword": "Diagonal",
+      "koName": "대각선 배치",
+      "category": "Composition & Framing",
+      "role": "Support",
+      "definition": "대각선 축 배치. 움직임, 에너지, 역동성",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "radial",
+      "keyword": "Radial",
+      "koName": "방사형 배치",
+      "category": "Composition & Framing",
+      "role": "Niche",
+      "definition": "중심에서 방사형. 집중, 폭발, 만다라",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "negative-space",
+      "keyword": "Negative Space",
+      "koName": "여백",
+      "category": "Composition & Framing",
+      "role": "Core",
+      "definition": "의도적 빈 공간. 여백이 메시지",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "tight-crop",
+      "keyword": "Tight Crop",
+      "koName": "타이트 크롭",
+      "category": "Composition & Framing",
+      "role": "Support",
+      "definition": "프레임까지 꽉 참. 밀도감, 임팩트",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "full-bleed",
+      "keyword": "Full Bleed",
+      "koName": "풀 블리드",
+      "category": "Composition & Framing",
+      "role": "Core",
+      "definition": "여백 없이 가장자리까지 확장. 몰입감",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "frame-in-frame",
+      "keyword": "Frame-in-Frame",
+      "koName": "프레임 인 프레임",
+      "category": "Composition & Framing",
+      "role": "Support",
+      "definition": "프레임 안의 프레임. 창문, 아치로 깊이와 맥락 부여",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "seamless-pattern",
+      "keyword": "Seamless Pattern",
+      "koName": "심리스 패턴",
+      "category": "Composition & Framing",
+      "role": "Core",
+      "definition": "이음새 없이 반복 타일. 배경, 텍스타일, 브랜드 패턴",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "grid-based",
+      "keyword": "Grid-Based",
+      "koName": "그리드 기반",
+      "category": "Composition & Framing",
+      "role": "Core",
+      "definition": "균등 격자 안에 요소 배치. 질서, 체계",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "layered-overlap",
+      "keyword": "Layered/Overlap",
+      "koName": "레이어드/겹침",
+      "category": "Composition & Framing",
+      "role": "Support",
+      "definition": "요소 겹쳐 쌓인 구성. 깊이감, 콜라주적 풍부함",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "realistic",
+      "keyword": "Realistic",
+      "koName": "사실적",
+      "category": "Subject Treatment",
+      "role": "Core",
+      "definition": "현실 그대로. 디테일, 질감, 비례 모두 실물",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "stylized",
+      "keyword": "Stylized",
+      "koName": "양식화",
+      "category": "Subject Treatment",
+      "role": "Core",
+      "definition": "현실 기반 과장/단순화. 캐릭터 일러스트, 마스코트",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "simplified",
+      "keyword": "Simplified",
+      "koName": "단순화",
+      "category": "Subject Treatment",
+      "role": "Core",
+      "definition": "핵심 형태만 남김. 아이콘, 인포그래픽 요소",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "geometric-abstract",
+      "keyword": "Geometric/Abstract",
+      "koName": "기하/추상",
+      "category": "Subject Treatment",
+      "role": "Core",
+      "definition": "기하 형태로 환원. 원, 삼각형, 사각형 조합",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "silhouette",
+      "keyword": "Silhouette",
+      "koName": "실루엣",
+      "category": "Subject Treatment",
+      "role": "Core",
+      "definition": "외곽만 남긴 단색 형태. 최대 단순화",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "outline-stroke-only",
+      "keyword": "Outline/Stroke-only",
+      "koName": "외곽선만",
+      "category": "Subject Treatment",
+      "role": "Support",
+      "definition": "외곽선만으로 형태. 내부 빈 상태",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "detailed",
+      "keyword": "Detailed",
+      "koName": "정교한/장식적",
+      "category": "Subject Treatment",
+      "role": "Support",
+      "definition": "장식적 디테일 풍부. 패턴, 문양",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "chibi",
+      "keyword": "Chibi",
+      "koName": "치비/SD",
+      "category": "Subject Treatment",
+      "role": "Support",
+      "definition": "과장 비율 (머리:몸 1:1~2). 극단적 귀여움",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "monoline",
+      "keyword": "Monoline",
+      "koName": "모노라인",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "모든 선이 동일한 굵기로 유지되는 균일하고 정돈된 선",
+      "visualResult": [
+        "균일한 선 굵기",
+        "정돈된 구조",
+        "미니멀한 인상"
+      ],
+      "implementation": [
+        "SVG Linework",
+        "CSS"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Developer Tool",
+          "Portfolio / Agency",
+          "Education"
+        ],
+        "tone": [
+          "Minimal",
+          "Technical",
+          "Premium"
+        ],
+        "useCase": [
+          "icon set",
+          "diagram",
+          "hero illustration"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Collage Illustration"
+      ],
+      "promptFragment": "clean monoline strokes with consistent stroke width and refined spacing",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "hairline",
+      "keyword": "Hairline",
+      "koName": "헤어라인",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "매우 가늘고 섬세한 선으로 정밀하고 고급스러운 인상",
+      "visualResult": [
+        "아주 얇은 선",
+        "섬세한 고급감",
+        "정밀한 구조"
+      ],
+      "implementation": [
+        "SVG Linework"
+      ],
+      "fit": {
+        "product": [
+          "Fintech",
+          "Fashion / Beauty",
+          "B2B Enterprise"
+        ],
+        "tone": [
+          "Premium",
+          "Minimal",
+          "Technical"
+        ],
+        "useCase": [
+          "premium diagram",
+          "luxury graphic"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "ultra-fine hairline strokes, refined precision, generous negative space",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "outline-drawing",
+      "keyword": "Outline Drawing",
+      "koName": "아웃라인 드로잉",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "대상의 외곽선을 중심으로 형태를 정의하는 선 기반 표현",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Static SVG Asset"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "contour-line",
+      "keyword": "Contour Line",
+      "koName": "컨투어 라인",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "대상의 외곽이나 형태 흐름을 따라 구조와 부피를 암시하는 선",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "continuous-line",
+      "keyword": "Continuous Line",
+      "koName": "연속선 드로잉",
+      "category": "Linework & Stroke",
+      "role": "Support",
+      "definition": "선을 거의 끊지 않고 하나의 흐름으로 대상을 그림",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "clean-vector-line",
+      "keyword": "Clean Vector Line",
+      "koName": "클린 벡터 라인",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "벡터 기반의 매끄럽고 정제된 선. 디지털 그래픽에 적합",
+      "visualResult": [
+        "매끄러운 곡선",
+        "정제된 디지털 인상",
+        "확장 가능한 벡터 느낌"
+      ],
+      "implementation": [
+        "SVG Linework",
+        "Static SVG Asset"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Creative Tool",
+          "Education"
+        ],
+        "tone": [
+          "Minimal",
+          "Playful",
+          "Technical"
+        ],
+        "useCase": [
+          "empty state",
+          "onboarding illustration"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Charcoal Drawing",
+        "Collage Illustration"
+      ],
+      "promptFragment": "smooth clean vector linework with polished digital edges",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "hand-drawn-line",
+      "keyword": "Hand-drawn Line",
+      "koName": "핸드드로잉 라인",
+      "category": "Linework & Stroke",
+      "role": "Support",
+      "definition": "손으로 그린 듯한 불균일한 흔들림과 자연스러운 필압",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Geometric Illustration"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "rough-ink-line",
+      "keyword": "Rough Ink Line",
+      "koName": "거친 잉크 라인",
+      "category": "Linework & Stroke",
+      "role": "Support",
+      "definition": "잉크의 번짐, 끊김, 거친 가장자리가 드러나는 질감 있는 선",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "technical-line",
+      "keyword": "Technical Line",
+      "koName": "테크니컬 라인",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "제도, 설계, 측정에 적합한 정밀하고 기능적인 선",
+      "visualResult": [
+        "제도선",
+        "측정선",
+        "설계도 느낌"
+      ],
+      "implementation": [
+        "SVG Linework"
+      ],
+      "fit": {
+        "product": [
+          "Developer Tool",
+          "Data Product",
+          "B2B Enterprise"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal"
+        ],
+        "useCase": [
+          "architecture diagram",
+          "spec sheet"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Blob Shape",
+        "Liquid Gradient"
+      ],
+      "promptFragment": "functional technical linework with precise guides and measurement logic",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "blueprint-line",
+      "keyword": "Blueprint Line",
+      "koName": "블루프린트 라인",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "청사진이나 설계도처럼 얇고 정밀한 보조선, 치수선 느낌",
+      "visualResult": [
+        "청사진 느낌",
+        "보조선",
+        "기술적 차가움"
+      ],
+      "implementation": [
+        "SVG Linework",
+        "CSS"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Developer Tool",
+          "Data Product",
+          "B2B Enterprise"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal"
+        ],
+        "useCase": [
+          "hero diagram",
+          "technical blog header"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Blob Shape",
+        "Children's Book Illustration",
+        "Clay Render",
+        "Claymation",
+        "Frutiger Aero",
+        "Ink Wash",
+        "Liquid Gradient",
+        "Mesh Gradient",
+        "Watercolor"
+      ],
+      "promptFragment": "blueprint-like thin guide lines, dimension marks, and precise construction details",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "engraved-line",
+      "keyword": "Engraved Line",
+      "koName": "인그레이빙 라인",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "판에 새긴 듯한 날카롭고 반복적인 선으로 음영과 장식성을 만듦",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Aurora Gradient",
+        "Clay Render",
+        "Cut-paper Illustration",
+        "Frosted Glass Material",
+        "Iridescent Material",
+        "Low-poly",
+        "Metaball",
+        "Translucent Material"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "wireframe-line",
+      "keyword": "Wireframe Line",
+      "koName": "와이어프레임 라인",
+      "category": "Linework & Stroke",
+      "role": "Core",
+      "definition": "3D 구조의 골격이나 면의 경계를 선만으로 표현",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "Three.js"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "dashed-line",
+      "keyword": "Dashed Line",
+      "koName": "파선",
+      "category": "Linework & Stroke",
+      "role": "Support",
+      "definition": "끊어진 선을 사용해 경로, 숨은 구조, 보조 관계를 표현",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "dotted-line",
+      "keyword": "Dotted Line",
+      "koName": "도트 라인",
+      "category": "Linework & Stroke",
+      "role": "Support",
+      "definition": "작은 점들의 연속으로 선을 구성해 연결감이나 보조 정보를 표현",
+      "visualResult": [],
+      "implementation": [
+        "SVG Linework",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "hatching",
+      "keyword": "Hatching",
+      "koName": "해칭",
+      "category": "Tone & Shading",
+      "role": "Core",
+      "definition": "평행선을 반복해 명암과 밀도를 표현하는 음영 기법",
+      "visualResult": [
+        "선 밀도 명암",
+        "고전적 음영",
+        "세밀한 깊이"
+      ],
+      "implementation": [],
+      "fit": {
+        "product": [
+          "Media / Publishing",
+          "Restaurant / Hospitality",
+          "Fashion / Beauty"
+        ],
+        "tone": [
+          "Premium",
+          "Editorial"
+        ],
+        "useCase": [
+          "editorial thumbnail",
+          "packaging visual"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "subtle hatching lines to build tone and engraved depth",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "cross-hatching",
+      "keyword": "Cross-hatching",
+      "koName": "크로스해칭",
+      "category": "Tone & Shading",
+      "role": "Core",
+      "definition": "서로 교차하는 선을 겹쳐 깊은 음영과 질감을 만듦",
+      "visualResult": [
+        "깊은 음영",
+        "판화적 밀도",
+        "고전적 텍스처"
+      ],
+      "implementation": [],
+      "fit": {
+        "product": [
+          "Fashion / Beauty",
+          "Media / Publishing",
+          "Restaurant / Hospitality"
+        ],
+        "tone": [
+          "Premium",
+          "Editorial",
+          "Bold"
+        ],
+        "useCase": [
+          "poster",
+          "brand visual"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Aurora Gradient",
+        "Clay Render",
+        "Cut-paper Illustration",
+        "Flat Design",
+        "Flat Vector Illustration",
+        "Frosted Glass Material",
+        "Glass Material",
+        "Iconography",
+        "Metaball",
+        "Sticker Art",
+        "Translucent Material"
+      ],
+      "promptFragment": "dense cross-hatching with refined engraved tonal depth",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "stippling",
+      "keyword": "Stippling",
+      "koName": "스티플링",
+      "category": "Tone & Shading",
+      "role": "Core",
+      "definition": "작은 점들의 밀도 차이로 명암과 질감을 만드는 점묘 기반 음영",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "halftone-shading",
+      "keyword": "Halftone Shading",
+      "koName": "하프톤 음영",
+      "category": "Tone & Shading",
+      "role": "Core",
+      "definition": "인쇄 망점처럼 점의 크기나 간격으로 톤을 분해해 표현",
+      "visualResult": [
+        "망점 톤",
+        "인쇄물 감성",
+        "레트로 팝"
+      ],
+      "implementation": [],
+      "fit": {
+        "product": [
+          "Gaming / Entertainment",
+          "Creative Tool",
+          "Media / Publishing"
+        ],
+        "tone": [
+          "Retro",
+          "Bold",
+          "Playful"
+        ],
+        "useCase": [
+          "thumbnail",
+          "poster"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "halftone dot shading with print-inspired tonal breakdown",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "screentone",
+      "keyword": "Screentone",
+      "koName": "스크린톤",
+      "category": "Tone & Shading",
+      "role": "Support",
+      "definition": "만화나 인쇄물에서 쓰이는 반복 점, 선, 패턴 톤",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "dithered-shading",
+      "keyword": "Dithered Shading",
+      "koName": "디더링 음영",
+      "category": "Tone & Shading",
+      "role": "Core",
+      "definition": "제한된 색상이나 픽셀 패턴으로 중간 톤을 만듦",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ink-wash-shading",
+      "keyword": "Ink Wash Shading",
+      "koName": "잉크 워시 음영",
+      "category": "Tone & Shading",
+      "role": "Support",
+      "definition": "묽은 잉크의 농담, 번짐, 층을 이용해 부드러운 명암",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "gradient-shading",
+      "keyword": "Gradient Shading",
+      "koName": "그라디언트 음영",
+      "category": "Tone & Shading",
+      "role": "Support",
+      "definition": "색상이나 명도가 부드럽게 변하는 그라디언트로 입체감 표현",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Cel Shading",
+        "Pixel Art",
+        "Screenprint"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "flat-fill",
+      "keyword": "Flat Fill",
+      "koName": "플랫 필",
+      "category": "Tone & Shading",
+      "role": "Core",
+      "definition": "음영 없이 단일 색면으로 형태를 채우는 간결한 표현",
+      "visualResult": [
+        "단순 색면",
+        "명확한 형태",
+        "가벼운 UI 친화성"
+      ],
+      "implementation": [],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Education",
+          "Productivity Tool"
+        ],
+        "tone": [
+          "Minimal",
+          "Playful"
+        ],
+        "useCase": [
+          "icon",
+          "empty state"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "flat color fills with simple geometric clarity and no complex shading",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "soft-shading",
+      "keyword": "Soft Shading",
+      "koName": "소프트 셰이딩",
+      "category": "Tone & Shading",
+      "role": "Support",
+      "definition": "부드러운 명암 변화와 낮은 경계감으로 입체감을 만듦",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Digital Brutalism"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "contour-shading",
+      "keyword": "Contour Shading",
+      "koName": "컨투어 음영",
+      "category": "Tone & Shading",
+      "role": "Support",
+      "definition": "형태의 굴곡을 따라가는 선이나 톤으로 구조를 표현",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "chiaroscuro",
+      "keyword": "Chiaroscuro",
+      "koName": "키아로스쿠로",
+      "category": "Tone & Shading",
+      "role": "Niche",
+      "definition": "강한 명암 대비로 극적인 깊이와 입체감을 만드는 고전적 음영",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "monochrome",
+      "keyword": "Monochrome",
+      "koName": "모노크롬",
+      "category": "Color Treatment",
+      "role": "Core",
+      "definition": "단일 색상 명도 변화만으로 구성. 흑백 포함",
+      "visualResult": [
+        "절제된 색",
+        "고급감",
+        "형태 중심"
+      ],
+      "implementation": [],
+      "fit": {
+        "product": [
+          "Developer Tool",
+          "Fashion / Beauty",
+          "Portfolio / Agency"
+        ],
+        "tone": [
+          "Minimal",
+          "Premium",
+          "Technical"
+        ],
+        "useCase": [
+          "brand graphic",
+          "technical diagram"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Frutiger Aero"
+      ],
+      "promptFragment": "monochrome palette using one ink color and tonal variation only",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "duotone",
+      "keyword": "Duotone",
+      "koName": "듀오톤",
+      "category": "Color Treatment",
+      "role": "Core",
+      "definition": "2색으로 하이라이트/섀도우 분리. 모던하고 강렬",
+      "visualResult": [
+        "두 색 대비",
+        "모던한 임팩트",
+        "브랜드 컬러 통일"
+      ],
+      "implementation": [],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Media / Publishing",
+          "Creative Tool"
+        ],
+        "tone": [
+          "Bold",
+          "Minimal",
+          "Editorial"
+        ],
+        "useCase": [
+          "thumbnail",
+          "hero image"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "controlled duotone color treatment with strong yet minimal contrast",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "tritone",
+      "keyword": "Tritone",
+      "koName": "트리톤",
+      "category": "Color Treatment",
+      "role": "Support",
+      "definition": "3색 톤 구성. Duotone보다 풍부하면서 제한적",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "limited-palette",
+      "keyword": "Limited Palette",
+      "koName": "제한 팔레트",
+      "category": "Color Treatment",
+      "role": "Core",
+      "definition": "의도적 3~5색. 절제, 브랜드 일관성",
+      "visualResult": [
+        "브랜드 일관성",
+        "절제된 조합",
+        "시스템화된 색"
+      ],
+      "implementation": [],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Fintech",
+          "Developer Tool",
+          "Education"
+        ],
+        "tone": [
+          "Minimal",
+          "Premium",
+          "Technical"
+        ],
+        "useCase": [
+          "design system asset",
+          "landing graphic"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "limited palette with restrained brand colors and clear hierarchy",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "full-color",
+      "keyword": "Full Color",
+      "koName": "풀 컬러",
+      "category": "Color Treatment",
+      "role": "Core",
+      "definition": "제한 없는 자연 풀컬러. 사진/리얼리스틱 기본값",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "halftone",
+      "keyword": "Halftone",
+      "koName": "하프톤 처리",
+      "category": "Color Treatment",
+      "role": "Core",
+      "definition": "인쇄 도트 패턴으로 톤 시뮬레이션. 코믹/레트로/팝아트",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "gradient-map",
+      "keyword": "Gradient Map",
+      "koName": "그라디언트 맵",
+      "category": "Color Treatment",
+      "role": "Support",
+      "definition": "명도값에 색상 매핑. 브랜드 컬러 통일 기법",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "desaturated",
+      "keyword": "Desaturated",
+      "koName": "디새추레이티드",
+      "category": "Color Treatment",
+      "role": "Support",
+      "definition": "채도 낮춘 처리. 차분하고 절제된 인상",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "inverted-negative",
+      "keyword": "Inverted/Negative",
+      "koName": "반전/네거티브",
+      "category": "Color Treatment",
+      "role": "Niche",
+      "definition": "색상 반전. 어두운 배경 + 밝은 피사체. 실험적",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "spot-color",
+      "keyword": "Spot Color",
+      "koName": "별색 강조",
+      "category": "Color Treatment",
+      "role": "Support",
+      "definition": "모노 위에 한 색만 강조. 시선 유도, 드라마틱",
+      "visualResult": [
+        "시선 유도",
+        "강조점",
+        "단정한 임팩트"
+      ],
+      "implementation": [],
+      "fit": {
+        "product": [
+          "Fintech",
+          "Developer Tool",
+          "Portfolio / Agency"
+        ],
+        "tone": [
+          "Bold",
+          "Editorial",
+          "Premium"
+        ],
+        "useCase": [
+          "diagram highlight",
+          "thumbnail"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "mostly monochrome composition with a single restrained spot color accent",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "color-grading",
+      "keyword": "Color Grading",
+      "koName": "컬러 그레이딩",
+      "category": "Color Treatment",
+      "role": "Core",
+      "definition": "영화적 색보정. 틸/오렌지, 쿨/웜 시프트 톤 통일",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "pastel",
+      "keyword": "Pastel",
+      "koName": "파스텔",
+      "category": "Color Treatment",
+      "role": "Core",
+      "definition": "높은 명도 + 낮은 채도. 부드럽고 친근",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Blueprint",
+        "Cyberpunk",
+        "Digital Brutalism"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "neon-vivid",
+      "keyword": "Neon/Vivid",
+      "koName": "네온/비비드",
+      "category": "Color Treatment",
+      "role": "Core",
+      "definition": "극도로 높은 채도. 에너지, 나이트라이프, 게이밍",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "earth-tone",
+      "keyword": "Earth Tone",
+      "koName": "어스 톤",
+      "category": "Color Treatment",
+      "role": "Support",
+      "definition": "갈색, 올리브, 테라코타. 자연, 오가닉, 크래프트",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "muted",
+      "keyword": "Muted",
+      "koName": "뮤티드",
+      "category": "Color Treatment",
+      "role": "Support",
+      "definition": "중간 채도. 탁하지만 세련. 스칸디나비안, 미니멀",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "high-contrast",
+      "keyword": "High Contrast",
+      "koName": "고대비",
+      "category": "Color Treatment",
+      "role": "Support",
+      "definition": "밝은/어두운 영역 극단 대비. 강렬, 드라마틱",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Children's Book Illustration"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "sepia-warm-cast",
+      "keyword": "Sepia/Warm Cast",
+      "koName": "세피아/웜 캐스트",
+      "category": "Color Treatment",
+      "role": "Support",
+      "definition": "갈색-황금 색조. 빈티지, 노스탤지어",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "paper-grain",
+      "keyword": "Paper Grain",
+      "koName": "종이 그레인",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "종이 섬유와 미세한 표면 입자가 보이는 자연스러운 종이 질감",
+      "visualResult": [
+        "종이 섬유",
+        "아날로그 감성",
+        "따뜻한 표면"
+      ],
+      "implementation": [
+        "SVG Filter",
+        "CSS",
+        "Generated Raster Image"
+      ],
+      "fit": {
+        "product": [
+          "Education",
+          "Media / Publishing",
+          "Restaurant / Hospitality"
+        ],
+        "tone": [
+          "Warm",
+          "Editorial",
+          "Premium"
+        ],
+        "useCase": [
+          "thumbnail",
+          "brand visual"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Cyberpunk",
+        "Glass Material",
+        "Glossy Finish",
+        "Holographic Material",
+        "Metallic Material",
+        "Particle Field",
+        "Synthwave",
+        "Vaporwave",
+        "Y2K Futurism"
+      ],
+      "promptFragment": "subtle paper grain texture with tactile editorial warmth",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "archival-paper-texture",
+      "keyword": "Archival Paper Texture",
+      "koName": "아카이브 종이 질감",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "오래된 문서, 박물관 자료처럼 고전적인 종이 표면감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "blueprint-paper-texture",
+      "keyword": "Blueprint Paper Texture",
+      "koName": "블루프린트 종이 질감",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "청사진 종이처럼 기술적이고 차가운 표면 질감",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "newsprint-texture",
+      "keyword": "Newsprint Texture",
+      "koName": "신문지 질감",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "얇은 종이, 잉크 번짐, 낮은 인쇄 품질의 신문 인쇄 질감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "risograph-grain",
+      "keyword": "Risograph Grain",
+      "koName": "리소그래프 그레인",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "리소 인쇄 특유의 거친 입자, 색 번짐, 어긋난 인쇄 질감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "screenprint-texture",
+      "keyword": "Screenprint Texture",
+      "koName": "실크스크린 질감",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "색면이 층으로 찍힌 듯한 가장자리, 잉크 두께, 수작업 인쇄감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "halftone-texture",
+      "keyword": "Halftone Texture",
+      "koName": "하프톤 질감",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "인쇄 망점이 표면 전체에 드러나는 점 기반 텍스처",
+      "visualResult": [],
+      "implementation": [
+        "SVG Filter",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "noise-texture",
+      "keyword": "Noise Texture",
+      "koName": "노이즈 텍스처",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "무작위 입자나 픽셀을 더해 디지털 표면의 밋밋함을 줄이는 질감",
+      "visualResult": [],
+      "implementation": [
+        "SVG Filter",
+        "CSS",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "film-grain",
+      "keyword": "Film Grain",
+      "koName": "필름 그레인",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "아날로그 필름처럼 미세한 입자와 불균일한 표면감",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "SVG Filter",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Cel Shading",
+        "Flat Design",
+        "Flat Vector Illustration",
+        "Iconography",
+        "Infographic",
+        "Isometric Illustration",
+        "Sticker Art",
+        "Toon Render",
+        "Vector Illustration",
+        "Wireframe Render"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "digital-noise",
+      "keyword": "Digital Noise",
+      "koName": "디지털 노이즈",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "디지털 랜덤 픽셀 노이즈. 균일하고 차가움",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "grain-gradient",
+      "keyword": "Grain Gradient",
+      "koName": "그레인 그라디언트",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "그라데이션에 미세 입자. 플랫에 깊이감 추가",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "distressed-grunge",
+      "keyword": "Distressed/Grunge",
+      "koName": "디스트레스드/그런지",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "긁힘, 얼룩, 마모 흔적. 거칠고 날것",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ink-bleed",
+      "keyword": "Ink Bleed",
+      "koName": "잉크 번짐",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "잉크가 종이에 스며들며 가장자리가 퍼지는 듯한 표현",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Chrome Material",
+        "Flat Vector Illustration",
+        "Geometric Illustration",
+        "Infographic",
+        "Isometric Illustration",
+        "Low-poly",
+        "Technical Illustration",
+        "Vector Illustration",
+        "Voxel"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ink-smudge",
+      "keyword": "Ink Smudge",
+      "koName": "잉크 얼룩",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "손이나 도구에 의해 잉크가 문질러진 듯한 얼룩",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "embossed-surface",
+      "keyword": "Embossed Surface",
+      "koName": "엠보싱 표면",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "표면이 위로 돌출된 듯한 입체적 압각 질감",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Flat Design"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "debossed-surface",
+      "keyword": "Debossed Surface",
+      "koName": "디보싱 표면",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "표면이 안쪽으로 눌린 듯한 음각 질감",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "matte-paper",
+      "keyword": "Matte Paper",
+      "koName": "매트 종이",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "빛 반사가 적고 부드러운 촉감의 무광 종이 표면",
+      "visualResult": [],
+      "implementation": [
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Glossy Finish"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "glossy-surface",
+      "keyword": "Glossy Surface",
+      "koName": "글로시 표면",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "빛을 강하게 반사하는 매끄럽고 광택 있는 표면",
+      "visualResult": [],
+      "implementation": [
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Gouache",
+        "Grainy Gradient",
+        "Pencil Sketch",
+        "Risograph",
+        "Woodcut"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "misregistration",
+      "keyword": "Misregistration",
+      "koName": "미스레지스트레이션",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "색판 어긋남. 리소/스크린프린트 불완전 정합",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "brushed-metal",
+      "keyword": "Brushed Metal",
+      "koName": "브러시드 메탈",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "금속 표면을 한 방향으로 문지른 듯한 미세한 선형 질감",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "acrylic-surface",
+      "keyword": "Acrylic Surface",
+      "koName": "아크릴 표면",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "투명하거나 반투명한 플라스틱 계열의 매끄럽고 가벼운 표면",
+      "visualResult": [],
+      "implementation": [
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "marble-texture",
+      "keyword": "Marble Texture",
+      "koName": "대리석 질감",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "자연석의 불규칙한 결, 고급스러운 색 흐름, 단단한 표면감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "concrete-texture",
+      "keyword": "Concrete Texture",
+      "koName": "콘크리트 질감",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "거칠고 미세한 입자, 무채색의 산업적 표면감",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image",
+        "CSS"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "fabric-texture",
+      "keyword": "Fabric Texture",
+      "koName": "패브릭 질감",
+      "category": "Texture & Surface",
+      "role": "Support",
+      "definition": "직물의 짜임, 섬유, 부드러운 표면",
+      "visualResult": [],
+      "implementation": [
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "holographic-foil",
+      "keyword": "Holographic Foil",
+      "koName": "홀로그래픽 포일",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "각도에 따라 무지갯빛이 변하는 얇은 금속박 같은 표면 효과",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "pearlescent-surface",
+      "keyword": "Pearlescent Surface",
+      "koName": "진주광 표면",
+      "category": "Texture & Surface",
+      "role": "Core",
+      "definition": "진주처럼 부드럽고 다층적인 색 반사가 나타나는 표면",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "halftone-pattern",
+      "keyword": "Halftone Pattern",
+      "koName": "하프톤 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "인쇄 망점처럼 점의 크기와 간격을 반복해 톤과 장식성을 만듦",
+      "visualResult": [
+        "반복 망점",
+        "인쇄감",
+        "레트로 질감"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": {
+        "product": [
+          "Media / Publishing",
+          "Gaming / Entertainment",
+          "Creative Tool"
+        ],
+        "tone": [
+          "Retro",
+          "Bold",
+          "Playful"
+        ],
+        "useCase": [
+          "poster",
+          "social thumbnail"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "halftone pattern with controlled dot scale and print-like texture",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "dot-pattern",
+      "keyword": "Dot Pattern",
+      "koName": "도트 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "점을 반복적으로 배열해 리듬, 질감, 배경 장식을 만듦",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "line-pattern",
+      "keyword": "Line Pattern",
+      "koName": "라인 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "선을 반복해 방향성, 밀도, 표면 질감을 만듦",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "checker-pattern",
+      "keyword": "Checker Pattern",
+      "koName": "체커 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Support",
+      "definition": "격자형 사각 패턴으로 대비와 리듬감을 만듦",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "grid-pattern",
+      "keyword": "Grid Pattern",
+      "koName": "그리드 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "그래픽 배경이나 표면 장식으로 쓰이는 격자 패턴",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "blueprint-grid-pattern",
+      "keyword": "Blueprint Grid Pattern",
+      "koName": "블루프린트 그리드 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "설계도 배경처럼 정밀한 격자와 보조선을 가진 기술적 패턴",
+      "visualResult": [
+        "설계도 배경",
+        "정밀 격자",
+        "보조선"
+      ],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": {
+        "product": [
+          "Developer Tool",
+          "AI SaaS",
+          "B2B Enterprise"
+        ],
+        "tone": [
+          "Technical",
+          "Minimal"
+        ],
+        "useCase": [
+          "background",
+          "diagram surface"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "subtle blueprint grid pattern with fine construction guides",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "wave-pattern",
+      "keyword": "Wave Pattern",
+      "koName": "웨이브 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "반복되는 파형 선이나 면으로 흐름과 유동성을 표현",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "topographic-pattern",
+      "keyword": "Topographic Pattern",
+      "koName": "지형도 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "등고선이 반복되어 지형, 데이터, 표면의 흐름을 암시",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "hatch-pattern",
+      "keyword": "Hatch Pattern",
+      "koName": "해치 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "평행선 또는 교차선을 반복해 밀도와 음영감을 만듦",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "circuit-pattern",
+      "keyword": "Circuit Pattern",
+      "koName": "회로 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "회로 기판처럼 선과 노드가 반복되는 기술적 장식 패턴",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "pixel-pattern",
+      "keyword": "Pixel Pattern",
+      "koName": "픽셀 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "작은 사각 픽셀 단위가 반복되어 디지털 질감이나 레트로 감성을 만듦",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Anatomical Illustration"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "guilloche-pattern",
+      "keyword": "Guilloche Pattern",
+      "koName": "기요셰 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "지폐나 보안 인쇄물처럼 정교한 곡선이 반복되는 장식 패턴",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "moir-pattern",
+      "keyword": "Moiré Pattern",
+      "koName": "무아레 패턴",
+      "category": "Pattern & Ornament",
+      "role": "Core",
+      "definition": "두 패턴이 겹치며 생기는 간섭 무늬로 광학적 긴장감을 만듦",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "ornamental-border",
+      "keyword": "Ornamental Border",
+      "koName": "장식 테두리",
+      "category": "Pattern & Ornament",
+      "role": "Niche",
+      "definition": "이미지나 영역의 가장자리를 장식하는 반복적 프레임 그래픽",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "corner-ornament",
+      "keyword": "Corner Ornament",
+      "koName": "코너 장식",
+      "category": "Pattern & Ornament",
+      "role": "Niche",
+      "definition": "프레임이나 박스의 모서리에 배치되는 장식 그래픽 요소",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "divider-ornament",
+      "keyword": "Divider Ornament",
+      "koName": "디바이더 장식",
+      "category": "Pattern & Ornament",
+      "role": "Niche",
+      "definition": "콘텐츠나 영역 사이를 나누는 장식적 구분선 그래픽",
+      "visualResult": [],
+      "implementation": [
+        "Static SVG Asset",
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "glow",
+      "keyword": "Glow",
+      "koName": "글로우",
+      "category": "Optical Effect",
+      "role": "Core",
+      "definition": "빛이 주변으로 퍼지는 듯한 발광 효과",
+      "visualResult": [
+        "발광",
+        "미래감",
+        "시선 집중"
+      ],
+      "implementation": [
+        "CSS",
+        "SVG Filter",
+        "Canvas"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Gaming / Entertainment",
+          "Creative Tool"
+        ],
+        "tone": [
+          "Bold",
+          "Cinematic",
+          "Technical"
+        ],
+        "useCase": [
+          "hero visual",
+          "interactive background"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Engraving",
+        "Ink Drawing",
+        "Letterpress",
+        "Linocut"
+      ],
+      "promptFragment": "subtle controlled glow used as a precise highlight, not excessive decoration",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "bloom",
+      "keyword": "Bloom",
+      "koName": "블룸",
+      "category": "Optical Effect",
+      "role": "Support",
+      "definition": "강한 빛이 화면에서 번져 밝은 영역이 부드럽게 확산",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "Canvas",
+        "WebGL"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "blur",
+      "keyword": "Blur",
+      "koName": "블러",
+      "category": "Optical Effect",
+      "role": "Support",
+      "definition": "형태를 흐리게 만들어 깊이감, 속도감, 비초점 효과",
+      "visualResult": [
+        "부드러운 깊이",
+        "비초점",
+        "층 분리"
+      ],
+      "implementation": [
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Wellness",
+          "Portfolio / Agency"
+        ],
+        "tone": [
+          "Minimal",
+          "Premium",
+          "Cinematic"
+        ],
+        "useCase": [
+          "background",
+          "atmosphere"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Engraving",
+        "Pixel Art",
+        "Screenprint",
+        "Woodcut"
+      ],
+      "promptFragment": "soft blur for atmospheric separation and subtle depth",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "lens-flare",
+      "keyword": "Lens Flare",
+      "koName": "렌즈 플레어",
+      "category": "Optical Effect",
+      "role": "Niche",
+      "definition": "카메라 렌즈에 강한 빛이 들어올 때 생기는 빛 번짐",
+      "visualResult": [],
+      "implementation": [
+        "Canvas",
+        "Generated Raster Image"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "chromatic-aberration",
+      "keyword": "Chromatic Aberration",
+      "koName": "색수차",
+      "category": "Optical Effect",
+      "role": "Core",
+      "definition": "RGB 색상이 살짝 어긋나며 렌즈 왜곡이나 디지털 감각을 만듦",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "SVG Filter",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "rgb-split",
+      "keyword": "RGB Split",
+      "koName": "RGB 분리",
+      "category": "Optical Effect",
+      "role": "Core",
+      "definition": "빨강, 초록, 파랑 채널을 분리해 글리치나 전자적 왜곡",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "Canvas"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "scanline",
+      "keyword": "Scanline",
+      "koName": "스캔라인",
+      "category": "Optical Effect",
+      "role": "Core",
+      "definition": "CRT나 오래된 디스플레이처럼 수평선이 반복되는 화면 질감",
+      "visualResult": [],
+      "implementation": [
+        "CSS",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "glitch",
+      "keyword": "Glitch",
+      "koName": "글리치",
+      "category": "Optical Effect",
+      "role": "Core",
+      "definition": "디지털 오류, 깨짐, 왜곡, 노이즈를 의도적으로 표현",
+      "visualResult": [
+        "디지털 오류",
+        "깨짐",
+        "긴장감"
+      ],
+      "implementation": [
+        "CSS",
+        "Canvas",
+        "SVG Filter"
+      ],
+      "fit": {
+        "product": [
+          "Gaming / Entertainment",
+          "Creative Tool",
+          "Developer Tool"
+        ],
+        "tone": [
+          "Bold",
+          "Technical",
+          "Retro"
+        ],
+        "useCase": [
+          "social thumbnail",
+          "experimental hero"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Anatomical Illustration",
+        "Botanical Illustration",
+        "Cartographic Illustration",
+        "Children's Book Illustration",
+        "Etching",
+        "Gouache",
+        "Lithograph",
+        "Scientific Illustration",
+        "Ukiyo-e",
+        "Watercolor"
+      ],
+      "promptFragment": "controlled glitch distortion with digital artifacts, used sparingly",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "liquid-distortion",
+      "keyword": "Liquid Distortion",
+      "koName": "리퀴드 왜곡",
+      "category": "Optical Effect",
+      "role": "Core",
+      "definition": "이미지가 액체 표면을 통과한 듯 휘어지고 흐르는 효과",
+      "visualResult": [],
+      "implementation": [
+        "WebGL",
+        "Canvas",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "noise-displacement",
+      "keyword": "Noise Displacement",
+      "koName": "노이즈 디스플레이스먼트",
+      "category": "Optical Effect",
+      "role": "Core",
+      "definition": "무작위 노이즈 값을 이용해 이미지나 선을 변형시키는 왜곡",
+      "visualResult": [],
+      "implementation": [
+        "WebGL",
+        "Canvas",
+        "SVG Filter"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "refraction",
+      "keyword": "Refraction",
+      "koName": "굴절",
+      "category": "Optical Effect",
+      "role": "Core",
+      "definition": "빛이 유리나 액체를 통과하며 뒤의 이미지가 휘어져 보이는 효과",
+      "visualResult": [
+        "빛의 휘어짐",
+        "프리미엄 깊이",
+        "유리/액체 감각"
+      ],
+      "implementation": [
+        "WebGL",
+        "Three.js"
+      ],
+      "fit": {
+        "product": [
+          "AI SaaS",
+          "Fashion / Beauty",
+          "Fintech"
+        ],
+        "tone": [
+          "Premium",
+          "Cinematic",
+          "Minimal"
+        ],
+        "useCase": [
+          "hero object",
+          "abstract visual"
+        ]
+      },
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Risograph"
+      ],
+      "promptFragment": "subtle refraction through glass or liquid, creating premium optical depth",
+      "depthStatus": "enriched"
+    },
+    {
+      "id": "caustics",
+      "keyword": "Caustics",
+      "koName": "카스틱스",
+      "category": "Optical Effect",
+      "role": "Niche",
+      "definition": "물이나 유리 표면을 통과한 빛이 밝은 곡선 패턴으로 맺히는 광학 효과",
+      "visualResult": [],
+      "implementation": [
+        "WebGL",
+        "Three.js"
+      ],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "soft-light",
+      "keyword": "Soft Light",
+      "koName": "소프트 라이트",
+      "category": "Mood & Atmosphere",
+      "role": "Core",
+      "definition": "부드럽고 확산된 광원. 그림자 옅음. 편안한 인상",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [
+        "Digital Brutalism"
+      ],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "hard-light",
+      "keyword": "Hard Light",
+      "koName": "하드 라이트",
+      "category": "Mood & Atmosphere",
+      "role": "Support",
+      "definition": "강한 직사광. 선명한 그림자. 드라마틱",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "backlit-rim-light",
+      "keyword": "Backlit/Rim Light",
+      "koName": "백라이트/림 라이트",
+      "category": "Mood & Atmosphere",
+      "role": "Support",
+      "definition": "피사체 뒤 광원. 실루엣 가장자리 빛남. 극적 분리",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "golden-hour",
+      "keyword": "Golden Hour",
+      "koName": "골든아워",
+      "category": "Mood & Atmosphere",
+      "role": "Core",
+      "definition": "일출/일몰 따뜻한 황금빛. 가장 따뜻한 자연광",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "blue-hour",
+      "keyword": "Blue Hour",
+      "koName": "블루아워",
+      "category": "Mood & Atmosphere",
+      "role": "Support",
+      "definition": "일출 직전/일몰 직후 차가운 청색. 고요, 멜랑콜리",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "neon-glow",
+      "keyword": "Neon Glow",
+      "koName": "네온 글로우",
+      "category": "Mood & Atmosphere",
+      "role": "Core",
+      "definition": "인공 네온 광원. 도시 야경, 나이트라이프",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "foggy-hazy",
+      "keyword": "Foggy/Hazy",
+      "koName": "안개/연무",
+      "category": "Mood & Atmosphere",
+      "role": "Support",
+      "definition": "안개/연무. 원경 흐릿. 몽환적, 신비",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "crisp-clean",
+      "keyword": "Crisp/Clean",
+      "koName": "크리스프/클린",
+      "category": "Mood & Atmosphere",
+      "role": "Core",
+      "definition": "대기 효과 없는 선명. 깨끗하고 명료. UI 기본",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "bokeh",
+      "keyword": "Bokeh",
+      "koName": "보케",
+      "category": "Mood & Atmosphere",
+      "role": "Core",
+      "definition": "초점 밖 빛 원형 산란. 로맨틱, 축제, 나이트",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "cottagecore",
+      "keyword": "Cottagecore",
+      "koName": "코티지코어",
+      "category": "Mood & Atmosphere",
+      "role": "Support",
+      "definition": "전원 로맨틱. 리넨, 들꽃, 베이킹, 자연광",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "dark-academia",
+      "keyword": "Dark Academia",
+      "koName": "다크 아카데미아",
+      "category": "Mood & Atmosphere",
+      "role": "Support",
+      "definition": "트위드, 고서, 촛불, 가을 톤. 학구적 고전주의",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "liminal-space",
+      "keyword": "Liminal Space",
+      "koName": "리미널 스페이스",
+      "category": "Mood & Atmosphere",
+      "role": "Support",
+      "definition": "빈 형광등 공간, 전이 공간의 언캐니 고요",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    },
+    {
+      "id": "solarpunk",
+      "keyword": "Solarpunk",
+      "koName": "솔라펑크",
+      "category": "Mood & Atmosphere",
+      "role": "Support",
+      "definition": "녹색 유토피아. 아르누보 곡선 + 식물 건축 + 재생에너지",
+      "visualResult": [],
+      "implementation": [],
+      "fit": null,
+      "compatibleKeywords": [],
+      "incompatibleKeywords": [],
+      "promptFragment": "",
+      "depthStatus": "pending"
+    }
+  ]
+}

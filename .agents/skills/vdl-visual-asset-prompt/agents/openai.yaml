@@ -1,0 +1,4 @@
+interface:
+  display_name: "VDL Visual Asset Prompt"
+  short_description: "Lock FORMAT, dial LOOK, vary SUBJECT"
+  default_prompt: "Use $vdl-visual-asset-prompt to turn this visual idea into a generation-ready Asset Template and prompt."
